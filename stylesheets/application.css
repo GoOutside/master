@@ -1,0 +1,25 @@
+body {
+  background-color: #93aa8f; }
+
+.login_container {
+  width: 75%;
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 0 auto;
+  text-align: center; }
+
+.login_form {
+  display: flex;
+  flex-flow: column nowrap; }
+
+body {
+  display: flex;
+  align-items: center; }
+
+.login_form_buttons {
+  display: flex;
+  flex-flow: row nowrap; }
+
+.login_form_inputs {
+  display: flex;
+  flex-flow: column nowrap; }

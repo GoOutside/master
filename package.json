@@ -1,0 +1,32 @@
+{
+  "name": "go-outside",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.0",
+    "mongoose": "^3.8",
+    "passport": "*",
+    "passport-http": "*",
+    "express-session": "*",
+    "bcrypt-nodejs": "latest",
+    "jwt-simple": "^0.2",
+    "moment" : "*"
+  },
+  "devDependencies": {
+    "browserify": "^4.1.3",
+    "chai": "^1.9.1",
+    "debowerify": "^0.7.1",
+    "globule": "^0.2.0",
+    "grunt": "^0.4.5",
+    "grunt-browserify": "^2.1.0",
+    "grunt-contrib-clean": "^0.5.0",
+    "grunt-contrib-copy": "^0.5.0",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-express-server": "^0.4.17",
+    "grunt-shell-spawn": "^0.3.0",
+    "grunt-simple-mocha": "^0.4.0",
+    "matchdep": "^0.3.0",
+    "mocha": "^1.18.2",
+    "superagent": "^0.18.0"
+  }
+}

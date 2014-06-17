@@ -9,7 +9,7 @@
 
         <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
 
-        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="stylesheets/reset.css">
         <link rel="stylesheet" href="stylesheets/application.css">
 
         <script src="js/vendor/modernizr-2.8.0.min.js"></script>
@@ -19,12 +19,18 @@
         <section>
           <p>SVG Placeholder</p>
         </section>
-        <form class"login_form">
-          <div class"login_form_inputs">
-            <input type="email" placeholder="email"></input>
-            <input type="password" placeholder="password"></input>
+        <form class="login_form">
+          <div class="login_form_inputs">
+            <div class="login_email_input">
+              <label>Email:</label>
+              <input type="email" placeholder="Type your Email"></input>
+            </div>
+            <div class="login_password_input">
+              <label>Password:</label>
+              <input type="password" placeholder="password"></input>
+            </div>
           </div>
-          <div class"login_form_buttons">
+          <div class="login_form_buttons">
             <a href="#" class="button_login">Login</a>
             <a href="#">Sign up</a>
           </div>

@@ -18,8 +18,20 @@ body {
 
 .login_form_buttons {
   display: flex;
-  flex-flow: row nowrap; }
+  flex-flow: row nowrap;
+  justify-content: center; }
 
 .login_form_inputs {
   display: flex;
-  flex-flow: column nowrap; }
+  flex-flow: column nowrap;
+  align-items: center; }
+
+.login_email_input {
+  flex-flow: row nowrap; }
+  .login_email_input input {
+    width: 100%; }
+
+.login_password_input {
+  flex-flow: row nowrap; }
+  .login_password_input input {
+    width: 100%; }

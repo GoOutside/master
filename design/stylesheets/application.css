@@ -1,37 +1,68 @@
 body {
   background-color: #93aa8f; }
 
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 45em;
+  width: 100%; }
+
+main {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  align-content: center; }
+
 .login_container {
   width: 75%;
   display: flex;
   flex-flow: column nowrap;
   margin: 0 auto;
-  text-align: center; }
+  text-align: center;
+  margin: auto; }
 
 .login_form {
   display: flex;
   flex-flow: column nowrap; }
 
-body {
-  display: flex;
-  align-items: center; }
-
 .login_form_buttons {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center; }
+  .login_form_buttons a {
+    font-size: 1.618em; }
+    .login_form_buttons a.button_login:hover {
+      background-color: white;
+      color: blue; }
 
 .login_form_inputs {
   display: flex;
   flex-flow: column nowrap;
-  align-items: center; }
+  margin: 0 auto; }
 
 .login_email_input {
-  flex-flow: row nowrap; }
+  flex-flow: row nowrap;
+  text-align: right;
+  width: 100%; }
   .login_email_input input {
-    width: 100%; }
+    width: 15em; }
 
 .login_password_input {
-  flex-flow: row nowrap; }
+  flex-flow: row nowrap;
+  text-align: right;
+  width: 100%; }
   .login_password_input input {
-    width: 100%; }
+    width: 15em; }
+
+.button_login {
+  height: auto;
+  width: 5em;
+  border-radius: 0.2em;
+  background-color: blue;
+  text-decoration: none;
+  align-content: center;
+  justify-content: center;
+  font-size: 1.618em;
+  color: white;
+  padding: 0.3em; }

@@ -7,6 +7,16 @@ module.exports = function(grunt) {
   require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
 
   grunt.initConfig({
+    sass: {
+      client: {
+        options: {
+          style: 'expanded'
+        },
+        files: {
+          "client/main.css": "public/design/sass/**/*", //confirm that this is all css
+        }
+      }
+    },
     jshint: {
       options: {
         jshintrc: true
@@ -40,7 +50,6 @@ module.exports = function(grunt) {
         debug: true
       }
     },
-
     express: {
       dev: {
         options: {
@@ -109,5 +118,5 @@ module.exports = function(grunt) {
   grunt.registerTask('test:api','simplemocha');
   grunt.registerTask('test',['test:acceptance','test:api']);
   grunt.registerTask('default', ['jshint', 'test']);
-  grunt.registerTask('build',['clean', 'browserify', 'copy']);
+  grunt.registerTask('build',['clean', 'browserify','sass', 'copy']);
 };

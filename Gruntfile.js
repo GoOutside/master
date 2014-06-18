@@ -29,13 +29,13 @@ module.exports = function(grunt) {
       },
       all: { src: ['test/api/**/*.js'] }
     },
-    clean: ['dist'],
+    clean: ['client'],
     copy: {
       all: {
         expand: true,
         cwd: 'app/',
         src: ['*.css', '*.html', 'views/*.html', '/images/**/*', '!Gruntfile.js'],
-        dest: 'dist/',
+        dest: 'client/',
         flatten: false,
         filter: 'isFile'
       },
@@ -43,7 +43,7 @@ module.exports = function(grunt) {
     browserify: {
       all: {
         src: 'app/js/**/*.js',
-        dest: 'dist/client.js'
+        dest: 'client/client.js'
       },
       options: {
         transform: ['debowerify'],

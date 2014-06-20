@@ -14,7 +14,6 @@ main
 // Layout for login page=============================================
 
 .login_container
-  width: 75%
   display: flex
   flex-flow: column nowrap
   margin: 0 auto
@@ -30,6 +29,8 @@ main
   justify-content: center
   a
     font-size: 1.618em
+    line-height: 2em
+    padding: 0 0.5em
     &.button_login
       &:hover
         background-color: white
@@ -38,21 +39,41 @@ main
 .login_form_inputs
   display: flex
   flex-flow: column nowrap
+  font-size: 1.618em
+  width: 80%
+  margin: 1em auto
+
+.login_email_input_container
+  width: 16em
   margin: 0 auto
 
 .login_email_input
-  flex-flow: row nowrap
+  flex-wrap: nowrap
   text-align: right
   width: 100%
   input
-    width: 15em
+    flex: 2
+    font-size: 1em
+  label
+    margin-left: 0
+    font-size: 1vm
+    flex: 1
+
+.login_password_input_container
+  width: 16em
+  margin: 0 auto
 
 .login_password_input
   flex-flow: row nowrap
   text-align: right
   width: 100%
   input
-    width: 15em
+    flex: 2
+    font-size: 1em
+  label
+    margin-left: 0
+    font-size: 1vm
+    flex: 1
 
 // layout for user-home.html=====================================
 
@@ -67,6 +88,13 @@ main
   position: fixed
   height: 100%
   width: 10em
+
+.user-list
+  li
+    text-align: left
+    margin: 0.2em 0
+    padding: 0.2em 0.5em
+    overflow: scroll
 
 .activity-location
   display: flex

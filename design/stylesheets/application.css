@@ -1,6 +1,17 @@
 body {
   background-color: #93aa8f; }
 
+.button_login {
+  height: auto;
+  width: 5em;
+  border-radius: 0.2em;
+  background-color: blue;
+  text-decoration: none;
+  align-content: center;
+  justify-content: center;
+  font-size: 1.618em;
+  color: white; }
+
 .index {
   display: flex;
   align-items: center;
@@ -15,7 +26,6 @@ main {
   align-content: center; }
 
 .login_container {
-  width: 75%;
   display: flex;
   flex-flow: column nowrap;
   margin: 0 auto;
@@ -30,7 +40,9 @@ main {
   flex-flow: row nowrap;
   justify-content: center; }
   .login_form_buttons a {
-    font-size: 1.618em; }
+    font-size: 1.618em;
+    line-height: 2em;
+    padding: 0 0.5em; }
     .login_form_buttons a.button_login:hover {
       background-color: white;
       color: blue; }
@@ -38,21 +50,41 @@ main {
 .login_form_inputs {
   display: flex;
   flex-flow: column nowrap;
+  font-size: 1.618em;
+  width: 80%;
+  margin: 1em auto; }
+
+.login_email_input_container {
+  width: 16em;
   margin: 0 auto; }
 
 .login_email_input {
-  flex-flow: row nowrap;
+  flex-wrap: nowrap;
   text-align: right;
   width: 100%; }
   .login_email_input input {
-    width: 15em; }
+    flex: 2;
+    font-size: 1em; }
+  .login_email_input label {
+    margin-left: 0;
+    font-size: 1vm;
+    flex: 1; }
+
+.login_password_input_container {
+  width: 16em;
+  margin: 0 auto; }
 
 .login_password_input {
   flex-flow: row nowrap;
   text-align: right;
   width: 100%; }
   .login_password_input input {
-    width: 15em; }
+    flex: 2;
+    font-size: 1em; }
+  .login_password_input label {
+    margin-left: 0;
+    font-size: 1vm;
+    flex: 1; }
 
 .user-home {
   display: flex;
@@ -65,6 +97,12 @@ main {
   position: fixed;
   height: 100%;
   width: 10em; }
+
+.user-list li {
+  text-align: left;
+  margin: 0.2em 0;
+  padding: 0.2em 0.5em;
+  overflow: scroll; }
 
 .activity-location {
   display: flex;
@@ -82,3 +120,10 @@ main {
   margin: 0.1em 0;
   height: 5em;
   width: 100%; }
+
+@media all and (max-width: 400px) {
+  body {
+    font-size: 0.619em; } }
+@media all and (max-width: 500px) and (min-width: 401px) {
+  body {
+    font-size: 0.79em; } }

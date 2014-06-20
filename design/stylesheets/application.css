@@ -1,7 +1,7 @@
 body {
   background-color: #93aa8f; }
 
-body {
+.index {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -19,8 +19,7 @@ main {
   display: flex;
   flex-flow: column nowrap;
   margin: 0 auto;
-  text-align: center;
-  margin: auto; }
+  text-align: center; }
 
 .login_form {
   display: flex;
@@ -55,14 +54,31 @@ main {
   .login_password_input input {
     width: 15em; }
 
-.button_login {
-  height: auto;
-  width: 5em;
-  border-radius: 0.2em;
+.user-home {
+  display: flex;
+  height: auto; }
+
+.user-side-menu {
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: green;
+  position: fixed;
+  height: 100%;
+  width: 10em; }
+
+.activity-location {
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: orange;
+  flex: 3; }
+
+.activity-map {
+  height: 20em;
+  width: 100%;
+  background-color: pink; }
+
+.activity-list-item {
   background-color: blue;
-  text-decoration: none;
-  align-content: center;
-  justify-content: center;
-  font-size: 1.618em;
-  color: white;
-  padding: 0.3em; }
+  margin: 0.1em 0;
+  height: 5em;
+  width: 100%; }

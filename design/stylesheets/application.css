@@ -63,7 +63,7 @@ main {
   text-align: right;
   width: 100%; }
   .login_email_input input {
-    flex: 2;
+    flex: 1;
     font-size: 1em; }
   .login_email_input label {
     margin-left: 0;
@@ -79,7 +79,7 @@ main {
   text-align: right;
   width: 100%; }
   .login_password_input input {
-    flex: 2;
+    flex: 1;
     font-size: 1em; }
   .login_password_input label {
     margin-left: 0;

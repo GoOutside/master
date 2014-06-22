@@ -4,13 +4,20 @@
   "dependencies": {
     "bcrypt-nodejs": "latest",
     "body-parser": "^1.3.1",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.3.1",
     "express": "^4.0",
-    "express-session": "*",
+    "express-session": "^1.5.1",
+    "hbs": "^2.7.0",
     "jwt-simple": "^0.2",
     "moment": "*",
     "mongoose": "^3.8",
+    "morgan": "^1.1.1",
     "passport": "*",
-    "passport-http": "*"
+    "passport-facebook": "^1.0.3",
+    "passport-http": "*",
+    "passport-local": "^1.0.0",
+    "passport-twitter": "^1.0.2"
   },
   "devDependencies": {
     "browserify": "^4.1.3",

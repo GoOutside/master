@@ -13,7 +13,7 @@ module.exports = function(grunt) {
           style: 'expanded'
         },
         files: {
-          "client/main.css": "public/design/sass/**/*", //confirm that this is all css
+          "client/main.css": "design/sass/**/*", //confirm that this is all css
         }
       }
     },
@@ -34,7 +34,7 @@ module.exports = function(grunt) {
       all: {
         expand: true,
         cwd: 'app/',
-        src: ['*.css', '*.html', 'views/*.html', '/images/**/*', '!Gruntfile.js'],
+        src: ['design/**/*.css', 'design/**/*.html', 'views/*.html', '/images/**/*', '!Gruntfile.js'],
         dest: 'client/',
         flatten: false,
         filter: 'isFile'

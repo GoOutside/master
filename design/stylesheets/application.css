@@ -46,12 +46,22 @@
   .activity:hover {
     border: 0.2em solid #2c6f34; }
 
-html {
-  background: url(http://i.imgur.com/ZOhM6zC.jpg) no-repeat center center fixed;
+html.html_login, html.html_user, html.html_activity {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
+
+html.html_login, html.html_user, html.html_activity {
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+html.html_login {
+  background-image: url(http://i.imgur.com/ZOhM6zC.jpg); }
+html.html_user {
+  background-image: url(http://i.imgur.com/ZOhM6zC.jpg); }
+html.html_activity {
+  background-image: url(http://i.imgur.com/YCaFGmB.jpg); }
 
 .index {
   display: flex;
@@ -149,7 +159,9 @@ main {
 
 .user-home {
   display: flex;
-  height: auto; }
+  height: auto;
+  margin: 0 auto;
+  width: 80%; }
 
 .user-side-menu {
   display: flex;

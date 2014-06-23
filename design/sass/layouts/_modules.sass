@@ -1,9 +1,18 @@
+@import placeholders
+
 html
-  background: url(http://i.imgur.com/ZOhM6zC.jpg) no-repeat center center fixed
-  -webkit-background-size: cover
-  -moz-background-size: cover
-  -o-background-size: cover
-  background-size: cover
+  &.html_login
+    @extend %cover
+    @extend %backgrounds
+    background-image: url(http://i.imgur.com/ZOhM6zC.jpg)
+  &.html_user
+    @extend %backgrounds
+    @extend %cover
+    background-image: url(http://i.imgur.com/ZOhM6zC.jpg)
+  &.html_activity
+    @extend %backgrounds
+    @extend %cover
+    background-image: url(http://i.imgur.com/YCaFGmB.jpg)
 
 .index
   display: flex
@@ -141,6 +150,8 @@ main
 .user-home
   display: flex
   height: auto
+  margin: 0 auto
+  width: 80%
 
 .user-side-menu
   display: flex

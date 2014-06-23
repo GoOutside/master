@@ -1,25 +1,165 @@
-body {
-  background-color: #93aa8f; }
+.button_login {
+  height: auto;
+  width: 5em;
+  border-radius: 0.2em;
+  background-color: blue;
+  text-decoration: none;
+  align-content: center;
+  justify-content: center;
+  font-size: 1.618em;
+  color: white; }
+
+.button_signup {
+  height: auto;
+  width: 5em;
+  border-radius: 0.2em;
+  background-color: #003035;
+  text-decoration: none;
+  align-content: center;
+  justify-content: center;
+  font-size: 1.618em;
+  color: white; }
+
+html {
+  background: url(http://i.imgur.com/ZOhM6zC.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+.index {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 45em;
+  width: 100%; }
+
+main {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  align-content: center; }
 
 .login_container {
-  width: 75%;
   display: flex;
   flex-flow: column nowrap;
+  width: 30em;
   margin: 0 auto;
-  text-align: center; }
+  text-align: center;
+  background-color: rgba(0, 48, 53, 0.8);
+  border-radius: 0.5em;
+  color: white; }
+
+.login_logo {
+  margin-top: 1em; }
 
 .login_form {
   display: flex;
-  flex-flow: column nowrap; }
-
-body {
-  display: flex;
-  align-items: center; }
+  flex-flow: column nowrap;
+  margin-bottom: 2em; }
 
 .login_form_buttons {
   display: flex;
-  flex-flow: row nowrap; }
+  flex-flow: row nowrap;
+  justify-content: center; }
+  .login_form_buttons a {
+    font-size: 1.618em;
+    line-height: 2em;
+    padding: 0 0.5em;
+    margin: 0 0.2em; }
+    .login_form_buttons a.button_login:hover, .login_form_buttons a.button_signup:hover {
+      background-color: white;
+      color: blue; }
 
 .login_form_inputs {
   display: flex;
-  flex-flow: column nowrap; }
+  flex-flow: column nowrap;
+  font-size: 1.618em;
+  width: 80%;
+  margin: 1em auto;
+  margin-right: 3em; }
+
+.login_email_input_container {
+  width: 16em;
+  margin: 0 auto; }
+
+.login_email_input {
+  flex-wrap: nowrap;
+  text-align: right;
+  width: 100%; }
+  .login_email_input input {
+    flex: 1;
+    font-size: 1em; }
+  .login_email_input label {
+    margin-left: 0;
+    font-size: 1vm;
+    flex: 1; }
+
+.login_password_input_container {
+  width: 16em;
+  margin: 0 auto; }
+
+.login_password_input {
+  flex-flow: row nowrap;
+  text-align: right;
+  width: 100%; }
+  .login_password_input input {
+    flex: 1;
+    font-size: 1em; }
+  .login_password_input label {
+    margin-left: 0;
+    font-size: 1vm;
+    flex: 1; }
+
+.login_social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1em; }
+  .login_social h4 {
+    margin-right: 0.3em;
+    font-size: 1.618em; }
+  .login_social a {
+    margin: 0 0.4em; }
+
+.user-home {
+  display: flex;
+  height: auto; }
+
+.user-side-menu {
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: green;
+  position: fixed;
+  height: 100%;
+  width: 10em; }
+
+.user-list li {
+  text-align: left;
+  margin: 0.2em 0;
+  padding: 0.2em 0.5em;
+  overflow: scroll; }
+
+.activity-location {
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: orange;
+  flex: 3; }
+
+.activity-map {
+  height: 20em;
+  width: 100%;
+  background-color: pink; }
+
+.activity-list-item {
+  background-color: blue;
+  margin: 0.1em 0;
+  height: 5em;
+  width: 100%; }
+
+@media all and (max-width: 400px) {
+  body {
+    font-size: 0.619em; } }
+@media all and (max-width: 500px) and (min-width: 401px) {
+  body {
+    font-size: 0.79em; } }

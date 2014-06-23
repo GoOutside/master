@@ -1,6 +1,3 @@
-body {
-  background-color: #93aa8f; }
-
 .button_login {
   height: auto;
   width: 5em;
@@ -23,6 +20,13 @@ body {
   font-size: 1.618em;
   color: white; }
 
+html {
+  background: url(http://i.imgur.com/ZOhM6zC.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
 .index {
   display: flex;
   align-items: center;
@@ -41,7 +45,20 @@ main {
   flex-flow: column nowrap;
   width: 30em;
   margin: 0 auto;
-  text-align: center; }
+  text-align: center;
+  background-color: #003035;
+  border-radius: 0.5em; }
+
+.login_container::after {
+  content: "";
+  background: url(image.jpg);
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1; }
 
 .login_form {
   display: flex;

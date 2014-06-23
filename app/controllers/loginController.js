@@ -8,6 +8,6 @@ module.exports = function(app) {
     },
     $scope.signin=function(){
       $location.path('/signin');
-    }
+    };
   });
-}
+};

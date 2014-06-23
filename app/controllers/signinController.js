@@ -1,7 +1,7 @@
 module.exports = function(app) {
   app.controller('LoginController', function($scope, $http, $base64, $cookies, $location){
     $scope.signin= function(){
-      $http.defaults.headers.common['Authentication']='Basic '+$base64($scope.user.email + ':' + $scope.user.password);
+      $http.defaults.headers.common['Authentication']='Basic '+$base64($scope.user.email + ':' + $scope.user.password); // jshint ignore:line
       $http({
         method: 'GET',
         url: '/api/v0.0.1/users'
@@ -11,6 +11,6 @@ module.exports = function(app) {
       }).error(function(data){
         console.log(data);
       });
-    }
+    };
   });
-}
+};

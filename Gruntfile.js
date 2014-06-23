@@ -11,7 +11,7 @@ module.exports = function(grunt) {
       options: {
         jshintrc: true
       },
-      all: ['Gruntfile.js', 'server.js', 'test/api/*.js','app/js/**/*.js']
+      all: ['Gruntfile.js', 'server.js', 'test/api/*.js','app/js/**/*.js', 'app/controllers/*.js', 'routes/*.js', 'config/*.js', 'models/*.js']
     },
     simplemocha: {
       options: {
@@ -108,5 +108,5 @@ module.exports = function(grunt) {
   grunt.registerTask('test:api','simplemocha');
   grunt.registerTask('test',['test:acceptance','test:api']);
   grunt.registerTask('default', ['jshint', 'test']);
-  grunt.registerTask('build',['clean', 'browserify','sass', 'copy']);
+  grunt.registerTask('build',['clean', 'browserify', 'copy']);
 };

@@ -5,9 +5,9 @@ require('angular-base64');
 
 var goApp = angular.module('goApp', ['ngRoute', 'base64', 'ngCookies']);
 
-require('./controllers/loginController')(goApp);
-require('./controllers/userController')(goApp);
-require('./controllers/detailsController')(goApp);
+require('../controllers/loginController')(goApp);
+require('../controllers/userController')(goApp);
+require('../controllers/detailsController')(goApp);
 
 goApp.config(['$routeProvider', function($routeProvider){
   $routeProvider

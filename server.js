@@ -10,9 +10,9 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var session = require('express-session');
 
-var configDB = require('./config/database.js');
+//var configDB = require('./config/database.js');
 
-mongoose.connect(configDB.url);
+//mongoose.connect(configDB.url);
 
 var app = express();
 
@@ -25,14 +25,14 @@ app.use(bodyparser.json());
 
 app.set('view engine', 'hbs');
 
-app.use(session({secret: 'gohikegohikegohike'})); // we can use secret key here
+//app.use(session({secret: 'gohikegohikegohike'})); // we can use secret key here
 app.use(express.static(__dirname + '/client'));
-app.use(passport.initialize());
-app.use(passport.session());
-app.use(flash());
+//app.use(passport.initialize());
+//app.use(passport.session());
+//app.use(flash());
 
-require('./routes/routes.js')(app, passport);
-require('./config/passport')(passport);
+//require('./routes/routes.js')(app, passport);
+//require('./config/passport')(passport);
 
 var server = http.createServer(app);
 server.listen(app.get('port'), function() {

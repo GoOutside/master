@@ -12,6 +12,17 @@ body {
   font-size: 1.618em;
   color: white; }
 
+.button_signup {
+  height: auto;
+  width: 5em;
+  border-radius: 0.2em;
+  background-color: #003035;
+  text-decoration: none;
+  align-content: center;
+  justify-content: center;
+  font-size: 1.618em;
+  color: white; }
+
 .index {
   display: flex;
   align-items: center;
@@ -28,6 +39,7 @@ main {
 .login_container {
   display: flex;
   flex-flow: column nowrap;
+  width: 30em;
   margin: 0 auto;
   text-align: center; }
 
@@ -42,8 +54,9 @@ main {
   .login_form_buttons a {
     font-size: 1.618em;
     line-height: 2em;
-    padding: 0 0.5em; }
-    .login_form_buttons a.button_login:hover {
+    padding: 0 0.5em;
+    margin: 0 0.2em; }
+    .login_form_buttons a.button_login:hover, .login_form_buttons a.button_signup:hover {
       background-color: white;
       color: blue; }
 

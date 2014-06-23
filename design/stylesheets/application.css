@@ -46,19 +46,12 @@ main {
   width: 30em;
   margin: 0 auto;
   text-align: center;
-  background-color: #003035;
+  background-color: rgba(0, 48, 53, 0.8);
   border-radius: 0.5em; }
 
-.login_container::after {
-  content: "";
-  background: url(image.jpg);
-  opacity: 0.5;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1; }
+.login_logo {
+  height: 1em;
+  color: blue; }
 
 .login_form {
   display: flex;

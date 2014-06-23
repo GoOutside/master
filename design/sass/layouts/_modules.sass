@@ -19,6 +19,7 @@ main
   align-content: center
 
 
+
 // <a href="http://imgur.com/ZOhM6zC"><img src="http://i.imgur.com/ZOhM6zC.jpg" title="Hosted by imgur.com"/></a>
 // Layout for login page=============================================
 
@@ -30,10 +31,24 @@ main
   text-align: center
   background-color: transparentize(#003035, .2)
   border-radius: 0.5em
+  //This should go to typography
+  color: white
+//What is this .login logo realy doing?
+// .login_logo
+//   height: 1em
+//   color: blue
 
 .login_logo
-  height: 1em
-  color: blue
+  margin-top: 1em
+  object
+    fill: white
+    &:hover
+      background-color: blue
+
+.login_svg
+  fill: white
+
+
 
 .login_form
   display: flex
@@ -98,6 +113,7 @@ main
   display: flex
   justify-content: center
   align-items: center
+  margin-bottom: 1em
   h4
     margin-right: 0.3em
     font-size: 1.618em

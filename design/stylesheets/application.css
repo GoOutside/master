@@ -47,11 +47,18 @@ main {
   margin: 0 auto;
   text-align: center;
   background-color: rgba(0, 48, 53, 0.8);
-  border-radius: 0.5em; }
+  border-radius: 0.5em;
+  color: white; }
 
 .login_logo {
-  height: 1em;
-  color: blue; }
+  margin-top: 1em; }
+  .login_logo object {
+    fill: white; }
+    .login_logo object:hover {
+      background-color: blue; }
+
+.login_svg {
+  fill: white; }
 
 .login_form {
   display: flex;
@@ -114,7 +121,8 @@ main {
 .login_social {
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  margin-bottom: 1em; }
   .login_social h4 {
     margin-right: 0.3em;
     font-size: 1.618em; }

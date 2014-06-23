@@ -45,7 +45,8 @@ main {
 
 .login_form {
   display: flex;
-  flex-flow: column nowrap; }
+  flex-flow: column nowrap;
+  margin-bottom: 2em; }
 
 .login_form_buttons {
   display: flex;
@@ -65,7 +66,8 @@ main {
   flex-flow: column nowrap;
   font-size: 1.618em;
   width: 80%;
-  margin: 1em auto; }
+  margin: 1em auto;
+  margin-right: 3em; }
 
 .login_email_input_container {
   width: 16em;
@@ -98,6 +100,16 @@ main {
     margin-left: 0;
     font-size: 1vm;
     flex: 1; }
+
+.login_social {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .login_social h4 {
+    margin-right: 0.3em;
+    font-size: 1.618em; }
+  .login_social a {
+    margin: 0 0.4em; }
 
 .user-home {
   display: flex;

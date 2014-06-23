@@ -23,7 +23,7 @@ module.exports = function(grunt) {
     copy: {
       all: {
         expand: true,
-        cwd: 'app/',
+        cwd: './',
         src: ['design/stylesheets/*.css', 'design/**/*.html', 'views/*.html', '/images/**/*', '!Gruntfile.js'],
         dest: 'client/',
         flatten: false,

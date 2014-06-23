@@ -52,13 +52,6 @@ main {
 
 .login_logo {
   margin-top: 1em; }
-  .login_logo object {
-    fill: white; }
-    .login_logo object:hover {
-      background-color: blue; }
-
-.login_svg {
-  fill: white; }
 
 .login_form {
   display: flex;

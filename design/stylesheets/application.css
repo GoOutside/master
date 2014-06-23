@@ -20,6 +20,32 @@
   font-size: 1.618em;
   color: white; }
 
+.activity {
+  line-height: 1.7em;
+  font-size: 1.618em;
+  background-color: #69ad57;
+  padding: 0.5em;
+  margin: 0.2em auto;
+  border: 0.2em solid white;
+  border-radius: 0.5em;
+  width: 70%;
+  text-align: left;
+  text-decoration: none;
+  color: white; }
+  .activity.hiking {
+    background: url(http://i.imgur.com/3Rsc4Up.png); }
+  .activity.cycling {
+    background: url(http://i.imgur.com/FiZyAk9.png?1);
+    color: #003035; }
+  .activity.water {
+    background: url(http://i.imgur.com/8ew7J2u.png?1);
+    color: #003035; }
+  .activity.snow {
+    background: url(http://i.imgur.com/LA598VO.png?1);
+    color: white; }
+  .activity:hover {
+    border: 0.2em solid #2c6f34; }
+
 html {
   background: url(http://i.imgur.com/ZOhM6zC.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -47,7 +73,8 @@ main {
   margin: 0 auto;
   text-align: center;
   background-color: rgba(0, 48, 53, 0.8);
-  border-radius: 0.5em; }
+  border-radius: 0.5em;
+  padding: 2em 0; }
   .login_container h4 {
     color: #69ad57; }
 

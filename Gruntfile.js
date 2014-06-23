@@ -7,16 +7,6 @@ module.exports = function(grunt) {
   require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
 
   grunt.initConfig({
-    sass: {
-      client: {
-        options: {
-          style: 'expanded'
-        },
-        files: {
-          "client/main.css": "design/sass/**/*", //confirm that this is all css
-        }
-      }
-    },
     jshint: {
       options: {
         jshintrc: true
@@ -34,7 +24,7 @@ module.exports = function(grunt) {
       all: {
         expand: true,
         cwd: 'app/',
-        src: ['design/**/*.css', 'design/**/*.html', 'views/*.html', '/images/**/*', '!Gruntfile.js'],
+        src: ['design/stylesheets/*.css', 'design/**/*.html', 'views/*.html', '/images/**/*', '!Gruntfile.js'],
         dest: 'client/',
         flatten: false,
         filter: 'isFile'

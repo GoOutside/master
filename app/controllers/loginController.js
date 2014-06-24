@@ -1,3 +1,4 @@
+'use strict';
 module.exports = function(app) {
   app.controller('LoginController', function($scope, $location){
     $scope.facebook= function(){
@@ -8,6 +9,6 @@ module.exports = function(app) {
     },
     $scope.signin=function(){
       $location.path('/signin');
-    };
+    }; // jshint ignore:line
   });
 };

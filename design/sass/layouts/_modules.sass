@@ -1,9 +1,24 @@
 html
-  background: url(http://i.imgur.com/ZOhM6zC.jpg) no-repeat center center fixed
-  -webkit-background-size: cover
-  -moz-background-size: cover
-  -o-background-size: cover
-  background-size: cover
+  &.html_login
+    background: url(http://i.imgur.com/ZOhM6zC.jpg) no-repeat center center fixed
+    -webkit-background-size: cover
+    -moz-background-size: cover
+    -o-background-size: cover
+    background-size: cover
+
+  &.html_user
+    background: url(http://i.imgur.com/ZOhM6zC.jpg) no-repeat center center fixed
+    -webkit-background-size: cover
+    -moz-background-size: cover
+    -o-background-size: cover
+    background-size: cover
+
+  &.html_activity
+    background: url(http://i.imgur.com/YCaFGmB.jpg) no-repeat center center fixed
+    -webkit-background-size: cover
+    -moz-background-size: cover
+    -o-background-size: cover
+    background-size: cover
 
 .index
   display: flex
@@ -31,12 +46,9 @@ main
   text-align: center
   background-color: transparentize(#003035, .2)
   border-radius: 0.5em
-  //This should go to typography
-  color: white
-//What is this .login logo realy doing?
-// .login_logo
-//   height: 1em
-//   color: blue
+  padding: 2em 0
+  h4
+    color: #69ad57
 
 .login_logo
   margin-top: 1em
@@ -58,8 +70,8 @@ main
     margin: 0 0.2em
     &.button_login, &.button_signup
       &:hover
-        background-color: white
-        color: blue
+        background-color: #9ac69b
+        color: #003035
 
 .login_form_inputs
   display: flex
@@ -67,39 +79,65 @@ main
   font-size: 1.618em
   width: 80%
   margin: 1em auto
-  margin-right: 3em
 
-.login_email_input_container
-  width: 16em
-  margin: 0 auto
+.login_input_container
+  width: 14.3em
 
-.login_email_input
+.login_input
   flex-wrap: nowrap
   text-align: right
   width: 100%
   input
     flex: 1
-    font-size: 1em
+    height: 1.618em
+    font-size: 0.8em
+    color: #bf7532
+    width: 12em
+    margin: 0.2em 0
+
+
+    // This is to style the input box
+    text-decoration: none
+    background: none
+    border-radius: 0
+    border: transparent
+    border-bottom: 2px solid white
+    -webkit-box-shadow: none
+    box-shadow: none
+    &:focus
+      border-bottom: 2px solid #acd34c
+      outline: none
   label
     margin-left: 0
     font-size: 1vm
     flex: 1
+    color: #69ad57
 
-.login_password_input_container
-  width: 16em
-  margin: 0 auto
 
-.login_password_input
-  flex-flow: row nowrap
-  text-align: right
-  width: 100%
-  input
-    flex: 1
-    font-size: 1em
-  label
-    margin-left: 0
-    font-size: 1vm
-    flex: 1
+
+
+
+// .search {
+//   color: white;
+//   width: 13em;
+//   text-decoration: none;
+//   background: none;
+//   border-radius: 0;
+//   border: transparent;
+//   border-bottom: 2px solid white;
+//   -webkit-box-shadow: none;
+//   box-shadow: none;
+//   font-family: 'Source Sans Pro', sans-serif;
+//   font-size: .8em;
+// }
+// .search:focus {
+//   border-bottom: 2px solid #acd34c;
+//   outline: none;
+// }
+
+
+
+
 
 .login_social
   display: flex
@@ -118,6 +156,8 @@ main
 .user-home
   display: flex
   height: auto
+  margin: 0 auto
+  width: 80%
 
 .user-side-menu
   display: flex

@@ -23,12 +23,20 @@ module.exports = function(grunt) {
     copy: {
       all: {
         expand: true,
-        cwd: './',
-        src: ['design/stylesheets/*.css', 'design/**/*.html', 'views/*.html', '/images/**/*', '!Gruntfile.js'],
+        cwd: './app',
+        src: ['views/*.html', './*.html', '!Gruntfile.js'],
         dest: 'client/',
         flatten: false,
         filter: 'isFile'
       },
+      design: {
+        expand: true,
+        cwd: './design',
+        src: ['stylesheets/*.css', 'images/**/*'],
+        dest: 'client/',
+        flatten: false,
+        filter: 'isFile'
+      }
     },
     browserify: {
       all: {
@@ -108,5 +116,5 @@ module.exports = function(grunt) {
   grunt.registerTask('test:api','simplemocha');
   grunt.registerTask('test',['test:acceptance','test:api']);
   grunt.registerTask('default', ['jshint', 'test']);
-  grunt.registerTask('build',['clean', 'browserify', 'copy']);
+  grunt.registerTask('build',['clean', 'browserify', 'copy:all', 'copy:design']);
 };

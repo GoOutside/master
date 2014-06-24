@@ -2,7 +2,7 @@
   height: auto;
   width: 5em;
   border-radius: 0.2em;
-  background-color: blue;
+  background-color: #bf7532;
   text-decoration: none;
   align-content: center;
   justify-content: center;
@@ -13,15 +13,53 @@
   height: auto;
   width: 5em;
   border-radius: 0.2em;
-  background-color: #003035;
+  background-color: #2c6f34;
   text-decoration: none;
   align-content: center;
   justify-content: center;
   font-size: 1.618em;
   color: white; }
 
-html {
+.activity {
+  line-height: 1.7em;
+  font-size: 1.618em;
+  background-color: #69ad57;
+  padding: 0.5em;
+  margin: 0.2em auto;
+  border: 0.2em solid white;
+  border-radius: 0.5em;
+  width: 70%;
+  text-align: left;
+  text-decoration: none;
+  color: white; }
+  .activity.hiking {
+    background: url(http://i.imgur.com/3Rsc4Up.png); }
+  .activity.cycling {
+    background: url(http://i.imgur.com/FiZyAk9.png?1);
+    color: #003035; }
+  .activity.water {
+    background: url(http://i.imgur.com/8ew7J2u.png?1);
+    color: #003035; }
+  .activity.snow {
+    background: url(http://i.imgur.com/LA598VO.png?1);
+    color: white; }
+  .activity:hover {
+    border: 0.2em solid #2c6f34; }
+
+html.html_login {
   background: url(http://i.imgur.com/ZOhM6zC.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+html.html_user {
+  background: url(http://i.imgur.com/ZOhM6zC.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+html.html_activity {
+  background: url(http://i.imgur.com/YCaFGmB.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -48,7 +86,9 @@ main {
   text-align: center;
   background-color: rgba(0, 48, 53, 0.8);
   border-radius: 0.5em;
-  color: white; }
+  padding: 2em 0; }
+  .login_container h4 {
+    color: #69ad57; }
 
 .login_logo {
   margin-top: 1em; }
@@ -68,48 +108,45 @@ main {
     padding: 0 0.5em;
     margin: 0 0.2em; }
     .login_form_buttons a.button_login:hover, .login_form_buttons a.button_signup:hover {
-      background-color: white;
-      color: blue; }
+      background-color: #9ac69b;
+      color: #003035; }
 
 .login_form_inputs {
   display: flex;
   flex-flow: column nowrap;
   font-size: 1.618em;
   width: 80%;
-  margin: 1em auto;
-  margin-right: 3em; }
+  margin: 1em auto; }
 
-.login_email_input_container {
-  width: 16em;
-  margin: 0 auto; }
+.login_input_container {
+  width: 14.3em; }
 
-.login_email_input {
+.login_input {
   flex-wrap: nowrap;
   text-align: right;
   width: 100%; }
-  .login_email_input input {
+  .login_input input {
     flex: 1;
-    font-size: 1em; }
-  .login_email_input label {
+    height: 1.618em;
+    font-size: 0.8em;
+    color: #bf7532;
+    width: 12em;
+    margin: 0.2em 0;
+    text-decoration: none;
+    background: none;
+    border-radius: 0;
+    border: transparent;
+    border-bottom: 2px solid white;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+    .login_input input:focus {
+      border-bottom: 2px solid #acd34c;
+      outline: none; }
+  .login_input label {
     margin-left: 0;
     font-size: 1vm;
-    flex: 1; }
-
-.login_password_input_container {
-  width: 16em;
-  margin: 0 auto; }
-
-.login_password_input {
-  flex-flow: row nowrap;
-  text-align: right;
-  width: 100%; }
-  .login_password_input input {
     flex: 1;
-    font-size: 1em; }
-  .login_password_input label {
-    margin-left: 0;
-    font-size: 1vm;
-    flex: 1; }
+    color: #69ad57; }
 
 .login_social {
   display: flex;
@@ -124,7 +161,9 @@ main {
 
 .user-home {
   display: flex;
-  height: auto; }
+  height: auto;
+  margin: 0 auto;
+  width: 80%; }
 
 .user-side-menu {
   display: flex;

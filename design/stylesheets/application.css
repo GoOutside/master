@@ -165,14 +165,6 @@ main {
   margin: 0 auto;
   width: 80%; }
 
-.user_side_menu {
-  display: flex;
-  flex-flow: column nowrap;
-  background-color: green;
-  position: fixed;
-  height: 100%;
-  width: 10em; }
-
 .user_list li {
   text-align: left;
   margin: 0.2em 0;
@@ -219,8 +211,8 @@ main {
   background-color: blue;
   top: 0;
   bottom: 0;
-  width: 13.755em;
-  left: -13.755em;
+  width: 23.755em;
+  left: -23.755em;
   height: 100%;
   -webkit-transform: translate(0px, 0px);
   -moz-transform: translate(0px, 0px);
@@ -233,11 +225,11 @@ main {
   transition: 0.30s ease; }
 
 .user_side_menu.active {
-  -webkit-transform: translate(13.755em, 0px);
-  -moz-transform: translate(13.755em, 0px);
-  -o-transform: translate(13.755em, 0px);
-  -ms-transform: translate(13.755em, 0px);
-  transform: translate(13.755em, 0px); }
+  -webkit-transform: translate(23.755em, 0px);
+  -moz-transform: translate(23.755em, 0px);
+  -o-transform: translate(23.755em, 0px);
+  -ms-transform: translate(23.755em, 0px);
+  transform: translate(23.755em, 0px); }
 
 .activity_location {
   -webkit-transform: translate(0px, 0px);
@@ -251,16 +243,16 @@ main {
   transition: 0.30s ease; }
 
 .activity_location.active {
-  -webkit-transform: translate(13.725em, 0px);
-  -moz-transform: translate(13.725em, 0px);
-  -o-transform: translate(13.725em, 0px);
-  -ms-transform: translate(13.725em, 0px);
-  transform: translate(13.725em, 0px); }
+  -webkit-transform: translate(23.725em, 0px);
+  -moz-transform: translate(23.725em, 0px);
+  -o-transform: translate(23.725em, 0px);
+  -ms-transform: translate(23.725em, 0px);
+  transform: translate(23.725em, 0px); }
 
 .menu-link {
   position: absolute;
   top: 15px;
-  left: 1em; }
+  left: 0.1em; }
 
 @media all and (max-width: 400px) {
   body {

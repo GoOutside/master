@@ -3,8 +3,8 @@
   background-color: blue;
   top: 0;
   bottom: 0;
-  width: 13.755em;
-  left: -13.755em;
+  width: 23.755em;
+  left: -23.755em;
   height: 100%;
   -webkit-transform: translate(0px, 0px);
   -moz-transform: translate(0px, 0px);
@@ -18,11 +18,11 @@
 }
 
 .user_side_menu.active {
-  -webkit-transform: translate(13.755em, 0px);
-  -moz-transform: translate(13.755em, 0px);
-  -o-transform: translate(13.755em, 0px);
-  -ms-transform: translate(13.755em, 0px);
-  transform: translate(13.755em, 0px);
+  -webkit-transform: translate(23.755em, 0px);
+  -moz-transform: translate(23.755em, 0px);
+  -o-transform: translate(23.755em, 0px);
+  -ms-transform: translate(23.755em, 0px);
+  transform: translate(23.755em, 0px);
 }
 
 .activity_location {
@@ -38,17 +38,17 @@
 }
 
 .activity_location.active {
-  -webkit-transform: translate(13.725em, 0px);
-  -moz-transform: translate(13.725em, 0px);
-  -o-transform: translate(13.725em, 0px);
-  -ms-transform: translate(13.725em, 0px);
-  transform: translate(13.725em, 0px);
+  -webkit-transform: translate(23.725em, 0px);
+  -moz-transform: translate(23.725em, 0px);
+  -o-transform: translate(23.725em, 0px);
+  -ms-transform: translate(23.725em, 0px);
+  transform: translate(23.725em, 0px);
 }
 
 .menu-link {
   position: absolute;
   top: 15px;
-  left: 1em;
+  left: 0.1em;
 }
 
 

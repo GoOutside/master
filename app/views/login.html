@@ -7,31 +7,33 @@
           <!-- <img src="images/GoOutsideLogo.svg" alt="GoOutside logo"> -->
           <!-- <svg width="100" height="100" -->
         </section>
+        <div ng-controller='loginController'>
         <form class="login_form">
           <div class="login_form_inputs">
             <div class="login_input_container">
               <div class="login_input">
                 <label>Email:</label>
-                <input type="email" placeholder="Type your Email" size="20"></input>
+                <input ng-model='user.email' type="email" placeholder="Type your Email" size="20"></input>
               </div>
             </div>
             <div class="login_input_container">
               <div class="login_input">
                 <label>Password:</label>
-                <input type="password" placeholder="Type your password"></input>
+                <input ng-model='user.password' type="password" placeholder="Type your password"></input>
               </div>
             </div>
           </div>
           <div class="login_form_buttons">
-            <a href="#" class="button_login">Login</a>
+            <a ng-click='signin()' href="#" class="button_login">Login</a>
             <a href="#" class="button_signup">Sign up</a>
           </div>
         </form>
+        </div>
 
         <section class="login_social">
           <h4>Login with:</h4>
-          <a href="#" class="button_FB"><img src="http://i.imgur.com/6jGbftu.png"/></a>
-          <a href="#" class="button_Twitter"><img src="http://i.imgur.com/sMjyaaP.png"/></a>
+          <a href="#" class="button_FB"><img src="https://i.imgur.com/6jGbftu.png"/></a>
+          <a href="#" class="button_Twitter"><img src="https://i.imgur.com/sMjyaaP.png"/></a>
         </section>
 
       </article>

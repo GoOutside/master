@@ -196,6 +196,24 @@ main {
   height: 5em;
   width: 100%; }
 
+.comingsoon {
+  opacity: 0.3; }
+
+.hidden {
+  display: none; }
+
+.activity {
+  display: flex;
+  flex-flow: row nowrap; }
+
+.activity:hover .hidden {
+  display: flex;
+  margin-left: 1em;
+  font-size: 1em; }
+
+.hidden:hover {
+  opacity: 1; }
+
 @media all and (max-width: 400px) {
   body {
     font-size: 0.619em; } }

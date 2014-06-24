@@ -165,22 +165,41 @@ main {
   margin: 0 auto;
   width: 80%; }
 
+.user_side_menu {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 48, 53, 0.8);
+  font-size: 1.618em; }
+
+.user_photo {
+  margin: 1.618em 0;
+  width: 60%;
+  border: 0.2em solid #69ad57;
+  border-radius: 0.2em; }
+
 .user_list li {
   text-align: left;
-  margin: 0.2em 0;
-  padding: 0.2em 0.5em;
-  overflow: scroll; }
+  margin: 0.4em 0;
+  padding: 0.2em 0.5em; }
+  .user_list li a {
+    font-size: 1em;
+    color: white; }
+
+.user_stats h3 {
+  font-size: 1.618em;
+  color: #bf7532; }
+.user_stats h5 {
+  color: #69ad57; }
 
 .activity_location {
   display: flex;
   flex-flow: column nowrap;
-  background-color: orange;
   flex: 3; }
 
 .activity_map {
   height: 20em;
   width: 100%;
-  background-color: pink; }
+  background-color: transparent; }
 
 .activity_list_item {
   background-color: blue;
@@ -208,11 +227,10 @@ main {
 
 .user_side_menu {
   position: fixed;
-  background-color: blue;
   top: 0;
   bottom: 0;
-  width: 23.755em;
-  left: -23.755em;
+  width: 17.755em;
+  left: -17.755em;
   height: 100%;
   -webkit-transform: translate(0px, 0px);
   -moz-transform: translate(0px, 0px);
@@ -225,11 +243,11 @@ main {
   transition: 0.30s ease; }
 
 .user_side_menu.active {
-  -webkit-transform: translate(23.755em, 0px);
-  -moz-transform: translate(23.755em, 0px);
-  -o-transform: translate(23.755em, 0px);
-  -ms-transform: translate(23.755em, 0px);
-  transform: translate(23.755em, 0px); }
+  -webkit-transform: translate(17.755em, 0px);
+  -moz-transform: translate(17.755em, 0px);
+  -o-transform: translate(17.755em, 0px);
+  -ms-transform: translate(17.755em, 0px);
+  transform: translate(17.755em, 0px); }
 
 .activity_location {
   -webkit-transform: translate(0px, 0px);
@@ -243,11 +261,11 @@ main {
   transition: 0.30s ease; }
 
 .activity_location.active {
-  -webkit-transform: translate(23.725em, 0px);
-  -moz-transform: translate(23.725em, 0px);
-  -o-transform: translate(23.725em, 0px);
-  -ms-transform: translate(23.725em, 0px);
-  transform: translate(23.725em, 0px); }
+  -webkit-transform: translate(17.725em, 0px);
+  -moz-transform: translate(17.725em, 0px);
+  -o-transform: translate(17.725em, 0px);
+  -ms-transform: translate(17.725em, 0px);
+  transform: translate(17.725em, 0px); }
 
 .menu-link {
   position: absolute;
@@ -256,7 +274,17 @@ main {
 
 @media all and (max-width: 400px) {
   body {
-    font-size: 0.619em; } }
+    font-size: 0.619em; }
+
+  li {
+    font-size: 1.618em;
+    margin-left: 1em; }
+
+  .user_stats {
+    margin-left: 1em; } }
 @media all and (max-width: 500px) and (min-width: 401px) {
   body {
     font-size: 0.79em; } }
+@media all and (min-width: 501px) {
+  body {
+    font-size: 1em; } }

@@ -117,8 +117,8 @@ main
 
 
 
-// .search {
-//   color: white;
+// .search
+//   color: white
 //   width: 13em;
 //   text-decoration: none;
 //   background: none;
@@ -200,7 +200,11 @@ main
   border: 0.2em solid white
   border-radius: 0.5em
   display: flex
-  flex-direction: row
+  flex-flow: row nowrap
+  justify-content: space-around
+  h1
+    line-height: 5em
+    font-size: 1.2em
 
 
 .comingsoon
@@ -220,3 +224,30 @@ main
 
 .hidden:hover
   opacity: 1
+
+
+// This is the voting system
+
+.rate_widget
+  overflow: visible
+  background-color: transparent
+  padding: 10px
+  position: relative
+  width: 8em
+  height: auto
+  display: flex
+  flex-flow: row nowrap
+
+.ratings_stars
+
+  img
+    height: 4em
+    width: auto
+
+
+.ratings_vote
+  background: url('images/pine_tree.svg') no-repeat
+
+.ratings_over
+  background: url('images/pine_tree.svg') no-repeat
+

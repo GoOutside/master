@@ -159,18 +159,6 @@ main {
   .login_social a {
     margin: 0 0.4em; }
 
-.user_home {
-  display: flex;
-  height: auto;
-  margin: 0 auto;
-  width: 80%; }
-
-.user_side_menu {
-  display: flex;
-  flex-direction: column;
-  background-color: rgba(0, 48, 53, 0.8);
-  font-size: 1.618em; }
-
 .user_photo {
   margin: 1.618em 0;
   width: 60%;
@@ -190,11 +178,6 @@ main {
   color: #bf7532; }
 .user_stats h5 {
   color: #69ad57; }
-
-.activity_location {
-  display: flex;
-  flex-flow: column nowrap;
-  flex: 3; }
 
 .activity_map {
   height: 20em;
@@ -285,6 +268,21 @@ main {
 @media all and (max-width: 500px) and (min-width: 401px) {
   body {
     font-size: 0.79em; } }
-@media all and (min-width: 501px) {
-  body {
-    font-size: 1em; } }
+@media all and (min-width: 901px) {
+  .menu-link {
+    display: none; }
+
+  .user_side_menu {
+    -webkit-transform: translate(17.755em, 0px);
+    -moz-transform: translate(17.755em, 0px);
+    -o-transform: translate(17.755em, 0px);
+    -ms-transform: translate(17.755em, 0px);
+    transform: translate(17.755em, 0px); }
+
+  .activity_location {
+    -webkit-transform: translate(17.725em, 0px);
+    -moz-transform: translate(17.725em, 0px);
+    -o-transform: translate(17.725em, 0px);
+    -ms-transform: translate(17.725em, 0px);
+    transform: translate(17.725em, 0px);
+    width: 80%; } }

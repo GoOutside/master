@@ -3,6 +3,10 @@
   body
     font-size: 0.619em
 
+  .user_list
+    li
+      line-height: 3em
+
   .user_stats
     margin-left: 1em
 
@@ -11,9 +15,13 @@
     width: 90%
 
 // Media bigger than the iphon but less than tablet
-@media all and (max-width: 500px) and (min-width: 401px)
+@media all and (max-width: 600px) and (min-width: 401px)
   body
     font-size: 0.79em
+    line-height: 3em
+
+  .user_list
+    line-height: 1em
 
 // Media bigger than Ipad and tablets id desktop
 
@@ -35,4 +43,5 @@
     -ms-transform: translate(17.755em, 0px)
     transform: translate(17.755em, 0px)
     width: 75%
+
 

@@ -201,10 +201,10 @@ main {
 
 .user_list li {
   text-align: left;
-  margin: 0.4em 0;
   padding: 0.2em 0;
   width: 95%;
-  border-bottom: 0.1em solid #9ac69b; }
+  border-bottom: 0.1em solid #9ac69b;
+  line-height: 1em; }
   .user_list li a {
     font-size: 1em;
     color: white;
@@ -387,15 +387,22 @@ body {
   body {
     font-size: 0.619em; }
 
+  .user_list li {
+    line-height: 3em; }
+
   .user_stats {
     margin-left: 1em; }
 
   .user_photo {
     margin: 1.618em 0;
     width: 90%; } }
-@media all and (max-width: 500px) and (min-width: 401px) {
+@media all and (max-width: 600px) and (min-width: 401px) {
   body {
-    font-size: 0.79em; } }
+    font-size: 0.79em;
+    line-height: 3em; }
+
+  .user_list {
+    line-height: 1em; } }
 @media all and (min-width: 901px) {
   .menu-link {
     display: none; }

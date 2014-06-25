@@ -159,11 +159,18 @@ main {
   .login_social a {
     margin: 0 0.4em; }
 
+.user_side_menu {
+  background-color: rgba(0, 48, 53, 0.8); }
+
 .user_photo {
-  margin: 1.618em 0;
-  width: 60%;
+  width: 70%;
   border: 0.2em solid #69ad57;
   border-radius: 0.2em; }
+
+.user_svg {
+  height: 4em;
+  width: 4em;
+  margin: 0.5em auto; }
 
 .user_list li {
   text-align: left;
@@ -185,10 +192,14 @@ main {
   background-color: transparent; }
 
 .activity_list_item {
-  background-color: blue;
-  margin: 0.1em 0;
+  background-color: #9ac69b;
+  margin: 0.7em;
   height: 5em;
-  width: 100%; }
+  width: 96%;
+  border: 0.2em solid white;
+  border-radius: 0.5em;
+  display: flex;
+  flex-direction: row; }
 
 .comingsoon {
   opacity: 0.3; }
@@ -212,8 +223,8 @@ main {
   position: fixed;
   top: 0;
   bottom: 0;
-  width: 17.755em;
-  left: -17.755em;
+  width: 25.755em;
+  left: -25.755em;
   height: 100%;
   -webkit-transform: translate(0px, 0px);
   -moz-transform: translate(0px, 0px);
@@ -226,11 +237,11 @@ main {
   transition: 0.30s ease; }
 
 .user_side_menu.active {
-  -webkit-transform: translate(17.755em, 0px);
-  -moz-transform: translate(17.755em, 0px);
-  -o-transform: translate(17.755em, 0px);
-  -ms-transform: translate(17.755em, 0px);
-  transform: translate(17.755em, 0px); }
+  -webkit-transform: translate(25.755em, 0px);
+  -moz-transform: translate(25.755em, 0px);
+  -o-transform: translate(25.755em, 0px);
+  -ms-transform: translate(25.755em, 0px);
+  transform: translate(25.755em, 0px); }
 
 .activity_location {
   -webkit-transform: translate(0px, 0px);
@@ -244,11 +255,11 @@ main {
   transition: 0.30s ease; }
 
 .activity_location.active {
-  -webkit-transform: translate(17.725em, 0px);
-  -moz-transform: translate(17.725em, 0px);
-  -o-transform: translate(17.725em, 0px);
-  -ms-transform: translate(17.725em, 0px);
-  transform: translate(17.725em, 0px); }
+  -webkit-transform: translate(25.725em, 0px);
+  -moz-transform: translate(25.725em, 0px);
+  -o-transform: translate(25.725em, 0px);
+  -ms-transform: translate(25.725em, 0px);
+  transform: translate(25.725em, 0px); }
 
 .menu-link {
   position: absolute;
@@ -264,7 +275,11 @@ main {
     margin-left: 1em; }
 
   .user_stats {
-    margin-left: 1em; } }
+    margin-left: 1em; }
+
+  .user_photo {
+    margin: 1.618em 0;
+    width: 90%; } }
 @media all and (max-width: 500px) and (min-width: 401px) {
   body {
     font-size: 0.79em; } }
@@ -273,6 +288,8 @@ main {
     display: none; }
 
   .user_side_menu {
+    width: 17.755em;
+    left: -17.755em;
     -webkit-transform: translate(17.755em, 0px);
     -moz-transform: translate(17.755em, 0px);
     -o-transform: translate(17.755em, 0px);
@@ -280,9 +297,9 @@ main {
     transform: translate(17.755em, 0px); }
 
   .activity_location {
-    -webkit-transform: translate(17.725em, 0px);
-    -moz-transform: translate(17.725em, 0px);
-    -o-transform: translate(17.725em, 0px);
-    -ms-transform: translate(17.725em, 0px);
-    transform: translate(17.725em, 0px);
+    -webkit-transform: translate(17.755em, 0px);
+    -moz-transform: translate(17.755em, 0px);
+    -o-transform: translate(17.755em, 0px);
+    -ms-transform: translate(17.755em, 0px);
+    transform: translate(17.755em, 0px);
     width: 80%; } }

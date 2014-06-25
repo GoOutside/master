@@ -153,27 +153,19 @@ main
 
 // layout for user-home.html=====================================
 
-// .user_home
-//   display: flex
-
-// .user_side_menu
-//   display: flex
-//   flex-direction: column
-//   background-color: transparentize(#003035, .2)
-//   font-size: 1.618em
-
-// .activity_location
-//   display: flex
-//   flex-flow: column nowrap
-//   width: 10em
-
-
+.user_side_menu
+  background-color: transparentize(#003035, 0.2)
 
 .user_photo
-  margin: 1.618em 0
-  width: 60%
+  width: 70%
   border: 0.2em solid #69ad57
   border-radius: 0.2em
+
+.user_svg
+  height: 4em
+  width: 4em
+  margin: 0.5em auto
+
 
 .user_list
   li
@@ -201,10 +193,15 @@ main
   background-color: transparent
 
 .activity_list_item
-  background-color: blue
-  margin: 0.1em 0
+  background-color: #9ac69b
+  margin: 0.7em
   height: 5em
-  width: 100%
+  width: 96%
+  border: 0.2em solid white
+  border-radius: 0.5em
+  display: flex
+  flex-direction: row
+
 
 .comingsoon
   opacity: .3

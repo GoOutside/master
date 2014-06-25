@@ -274,11 +274,6 @@ main {
   -ms-transform: translate(25.725em, 0px);
   transform: translate(25.725em, 0px); }
 
-.menu-link {
-  position: absolute;
-  top: 15px;
-  left: 0.1em; }
-
 body {
   padding: 20px;
   font-size: 20px; }

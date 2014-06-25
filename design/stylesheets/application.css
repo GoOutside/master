@@ -175,10 +175,17 @@ main {
 .user_list li {
   text-align: left;
   margin: 0.4em 0;
-  padding: 0.2em 0.5em; }
+  padding: 0.2em 0;
+  width: 95%;
+  border-bottom: 0.1em solid #9ac69b; }
   .user_list li a {
     font-size: 1em;
-    color: white; }
+    color: white;
+    width: 100%;
+    text-decoration: none;
+    margin-left: 1em; }
+  .user_list li:hover {
+    background-color: #9ac69b; }
 
 .user_stats h3 {
   font-size: 1.618em;
@@ -332,10 +339,6 @@ body {
 @media all and (max-width: 400px) {
   body {
     font-size: 0.619em; }
-
-  li {
-    font-size: 1.618em;
-    margin-left: 1em; }
 
   .user_stats {
     margin-left: 1em; }

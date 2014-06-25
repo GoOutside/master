@@ -45,10 +45,18 @@
 }
 
 .menu-link {
-
-
+  background-color: transparent;
+  border: hidden
 }
 
+.menu-link:active {
+  border: none;
+  color: white
+}
+
+.menu-link:focus {
+  box-shadow: none
+}
 
 
 

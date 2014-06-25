@@ -2,9 +2,6 @@ body {
   padding: 20px;
   font-size: 20px; }
 
-.rating {
-  margin: 10px 0; }
-
 .rating i {
   display: inline-block;
   width: 0;

@@ -223,6 +223,10 @@ main {
 .icon-menu_logo_button {
   font-size: 3em; }
 
+.icon-GoOutsideLogo {
+  font-size: 3em;
+  line-height: 1.5em; }
+
 .activity_map {
   height: 20em;
   width: 100%;
@@ -306,14 +310,21 @@ main {
 
 .menu-link {
   background-color: transparent;
-  border: hidden; }
+  border: hidden;
+  color: white;
+  left: 0px; }
 
 .menu-link:active {
   border: none;
-  color: white; }
+  color: #69ad57;
+  outline: none; }
 
 .menu-link:focus {
-  box-shadow: none; }
+  box-shadow: none;
+  outline: none; }
+
+.icon-GoOutsideLogo {
+  color: white; }
 
 body {
   padding: 20px;

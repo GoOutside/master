@@ -273,14 +273,24 @@ main {
   width: 100%; }
 
 .activity_list_item {
-  margin: 0.7em;
-  height: 5em;
   width: 96%;
+  margin: 0.7em;
   border: 0.2em solid white;
-  border-radius: 0.5em;
+  border-radius: 0.5em; }
+
+.activity_list_item_top {
+  height: 5em;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around; }
+
+.panel {
+  background: #9ac69b;
+  height: 10em;
+  padding: 1em;
+  display: none; }
+  .panel li {
+    margin: 0.3em 0; }
 
 .hidden {
   display: none; }

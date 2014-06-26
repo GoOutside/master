@@ -186,6 +186,10 @@ main {
   .login_social a {
     margin: 0 0.4em; }
 
+.user_home {
+  width: 100%;
+  overflow: hidden; }
+
 .user_side_menu {
   background-color: rgba(0, 48, 53, 0.8); }
 
@@ -327,8 +331,7 @@ main {
   color: white; }
 
 body {
-  padding: 20px;
-  font-size: 20px; }
+  font-size: 1.25em; }
 
 .rating i {
   display: inline-block;

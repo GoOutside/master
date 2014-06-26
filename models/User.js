@@ -10,18 +10,18 @@ var userSchema = mongoose.Schema({
     email: String,
     password: String,
   },
-  facebook: {
-    id : String,
-    token: String,
-    email: String,
-    name: String
-  },
-  twitter: {
-    id: String,
-    token: String,
-    displayName: String,
-    username: String
-  },
+  // facebook: {
+  //   id : String,
+  //   token: String,
+  //   email: String,
+  //   name: String
+  // },
+  // twitter: {
+  //   id: String,
+  //   token: String,
+  //   displayName: String,
+  //   username: String
+  // },
   hikes: {
     favorites: [],
     ratings: [{}]
@@ -32,11 +32,15 @@ userSchema.methods.generateHash = function(password) {
   return bcrypt.hashSync(password, bcrypt.genSaltSync(8), null);
 };
 
+userSchema.methods.checkHash = function (password) {
+  return bcrypt.compareSync(password, this.basic.password);
+};
+
 userSchema.methods.validPassword = function(password) {
   return bcrypt.compareSync(password, this.basic.password);
 };
 
-userSchema.methods.createToken = function(app) {
+userSchema.methods.createJWTToken = function(app) {
   var expires = moment().add('days', 7).valueOf();
   var that = this;
   var token = jwt.encode({

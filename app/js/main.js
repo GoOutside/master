@@ -13,19 +13,19 @@ goApp.config(['$routeProvider', function($routeProvider){
   $routeProvider
     .when('/user', {
       templateUrl: 'views/user.html',
-      controller: 'UserController'
+      controller: 'userController'
     })
     .when('/login', {
       templateUrl: 'views/login.html',
-      controller: 'LoginController'
+      controller: 'loginController'
     })
     .when('/signin', {
       templateUrl: 'views/signin.html',
-      controller: 'SigninController'
+      controller: 'signinController'
     })
     .when('/details', {
       templateUrl: 'views/details.html',
-      controller: 'DetailsController'
+      controller: 'detailsController'
     })
     .otherwise({
       redirectTo: '/login'

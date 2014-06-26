@@ -45,11 +45,25 @@
 }
 
 .menu-link {
-  position: absolute;
-  top: 15px;
-  left: 0.1em;
+  background-color: transparent;
+  border: hidden;
+  color: white;
+  left: 0px
 }
 
+.menu-link:active {
+  border: none;
+  color: #69ad57;
+  outline: none;
+}
 
+.menu-link:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.icon-GoOutsideLogo {
+  color: white;
+}
 
 

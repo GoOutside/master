@@ -8,8 +8,8 @@ $(".menu-link").click(function(){
 //   $('.panel').slideToggle('fast', 0);
 // });
 
-  $('.activity_list_item').on("click", function(){
-    $(this).find('.panel').slideToggle('fast', 0);
-  });
+$('.activity_list_item').on("click", function(){
+  $(this).find('.panel').slideToggle('fast', 0);
+});
 
 

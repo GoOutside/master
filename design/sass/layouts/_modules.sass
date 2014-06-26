@@ -60,14 +60,12 @@ main
   width: 100%
 
 .activity_list_item
-  background-color: #9ac69b
-  height: 5em
   width: 96%
   margin: 0.7em
   border: 0.2em solid white
   border-radius: 0.5em
-  // display: flex
-  //flex-flow: column nowrap
+  display: flex
+  flex-flow: column nowrap
 
 
 .activity_list_item_top
@@ -83,6 +81,24 @@ main
   display: none
   li
     margin: 0.3em 0
+
+.panel_container
+  display: flex
+  flex-flow: column nowrap
+
+.panel_options
+  display: flex
+  flex-flow: row nowrap
+  justify-content: space-around
+  .button_signup
+    width: 8em
+    height: 2em
+    line-height: 2em
+    margin: auto
+    text-align: center
+.panel_options_img
+  height: 30%
+  width: 30%
 
 .pull-me
   cursor:pointer

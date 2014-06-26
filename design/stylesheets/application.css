@@ -440,7 +440,7 @@ html.html_activity {
   -o-background-size: cover;
   background-size: cover; }
 
-@media all and (max-width: 400px) {
+@media all and (max-width: 470px) {
   body {
     font-size: 0.619em; }
 
@@ -453,7 +453,7 @@ html.html_activity {
   .user_photo {
     margin: 1.618em 0;
     width: 80%; } }
-@media all and (max-width: 600px) and (min-width: 401px) {
+@media all and (max-width: 600px) and (min-width: 471px) {
   body {
     font-size: 1em; }
 

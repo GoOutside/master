@@ -30,3 +30,12 @@
 .icon-menu_logo_button:before {
 	content: "\e600";
 }
+
+// Haymaker font=======================
+
+@font-face {
+  font-family: 'haymaker';
+  src:url('../sass/typography/fonts/Haymaker.ttf');
+  font-weight: normal;
+  font-size: normal;
+}

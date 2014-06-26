@@ -22,6 +22,11 @@
 .icon-menu_logo_button:before {
   content: "\e600"; }
 
+@font-face {
+  font-family: 'haymaker';
+  src: url("../sass/typography/fonts/Haymaker.ttf");
+  font-weight: normal;
+  font-size: normal; }
 h5 {
   color: #69ad57; }
 
@@ -104,6 +109,9 @@ main {
   justify-content: center;
   align-items: center;
   align-content: center; }
+
+body {
+  font-family: "haymaker"; }
 
 .login_container {
   display: flex;
@@ -401,11 +409,10 @@ body {
     width: 90%; } }
 @media all and (max-width: 600px) and (min-width: 401px) {
   body {
-    font-size: 0.79em;
-    line-height: 3em; }
+    font-size: 1em; }
 
-  .user_list {
-    line-height: 1em; } }
+  .user_list li {
+    line-height: 3em; } }
 @media all and (min-width: 901px) {
   .menu-link {
     display: none; }

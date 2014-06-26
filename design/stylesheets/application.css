@@ -294,6 +294,25 @@ main {
   .panel li {
     margin: 0.3em 0; }
 
+.panel_container {
+  display: flex;
+  flex-flow: column nowrap; }
+
+.panel_options {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around; }
+  .panel_options .button_signup {
+    width: 8em;
+    height: 2em;
+    line-height: 2em;
+    margin: auto;
+    text-align: center; }
+
+.panel_options_img {
+  height: 30%;
+  width: 30%; }
+
 .hidden {
   display: none; }
 
@@ -440,7 +459,7 @@ html.html_activity {
   -o-background-size: cover;
   background-size: cover; }
 
-@media all and (max-width: 470px) {
+@media all and (max-width: 500px) {
   body {
     font-size: 0.619em; }
 
@@ -453,7 +472,7 @@ html.html_activity {
   .user_photo {
     margin: 1.618em 0;
     width: 80%; } }
-@media all and (max-width: 600px) and (min-width: 471px) {
+@media all and (max-width: 600px) and (min-width: 500px) {
   body {
     font-size: 1em; }
 
@@ -482,8 +501,14 @@ html.html_activity {
     width: 10em;
     height: 10em; } }
 @media all and (min-width: 901px) {
+  .user_stats {
+    margin: 1em; }
+
   .menu-link {
     display: none; }
+
+  .activity_list_item .panel {
+    height: auto; }
 
   .user_side_menu {
     width: 17.755em;

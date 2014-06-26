@@ -1,6 +1,6 @@
 
 // Anything less than 400px ie an Iphone
-@media all and (max-width: 470px)
+@media all and (max-width: 500px)
   body
     font-size: 0.619em
 
@@ -16,7 +16,7 @@
     width: 80%
 
 // Media bigger than the iphon but less than tablet
-@media all and (max-width: 600px) and (min-width: 471px)
+@media all and (max-width: 600px) and (min-width: 500px)
   body
     font-size: 1em
 
@@ -51,8 +51,15 @@
 
 // Media bigger than Ipad and tablets id desktop
 @media all and (min-width: 901px)
+  .user_stats
+    margin: 1em
   .menu-link
     display: none
+
+  .activity_list_item
+    .panel
+      height: auto
+
   .user_side_menu
     width: 17.755em
     left: -17.755em
@@ -61,6 +68,7 @@
     -o-transform: translate(17.755em, 0px)
     -ms-transform: translate(17.755em, 0px)
     transform: translate(17.755em, 0px)
+
   .activity_location
     -webkit-transform: translate(17.755em, 0px)
     -moz-transform: translate(17.755em, 0px)
@@ -68,5 +76,7 @@
     -ms-transform: translate(17.755em, 0px)
     transform: translate(17.755em, 0px)
     width: 75%
+
+
 
 

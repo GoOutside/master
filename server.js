@@ -28,6 +28,10 @@ app.set('jwtTokenSecret', process.env.JWT_SECRET || 'takeahiketakeahiketakeahike
 require('./config/passport')(passport);
 require('./routes/routes')(app, passport);
 
+//protected route
+//require(./routes/protected')(app, passport, jwtauth.auth);
+//in the app.post or app.get call include 'jwtauth' after the route and before the callback funct.
+
 
 var options = {
   key: fs.readFileSync('config/server.key'),

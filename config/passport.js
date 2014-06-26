@@ -10,8 +10,10 @@ module.exports = function(passport) {
   passport.use('basic', new BasicStrategy({
     usernameField: 'email',
     passwordField: 'password'
-  }, function(email, password, done) {
+  },
+  function(email, password, done) {
     User.findOne({'basic.email': email}, function (err, user) {
+      console.log(email);
       if(err) {
         return done(err);
       }

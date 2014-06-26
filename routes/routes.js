@@ -26,9 +26,13 @@ module.exports = function (app, passport) {
     });
   });
 
-  app.get('/api/v0_0_1/users', passport.authenticate('basic', {session: false}), function (req, res) {
-    console.log('authenticated');
-    return res.json({'jwt': req.user.createJWTToken(app)});
+  app.get('/api/v0_0_1/users',
+    passport.authenticate('basic', {
+      session: false,
+      failureRedirect: '/#/login'
+    }),
+    function (req, res) {
+      return res.json({'jwt': req.user.createJWTToken(app)});
   });
 
 };
@@ -146,4 +150,3 @@ module.exports = function (app, passport) {
   //   // if they aren't redirect them to the home page
   //   res.redirect('/');
   // }
-

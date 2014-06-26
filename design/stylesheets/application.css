@@ -1,65 +1,472 @@
-/*
-Syntax error: Invalid variable: "$green:".
-        on line 1 of sass/color/_color.sass
-        from line 4 of sass/application.sass
+@font-face {
+  font-family: 'icomoon';
+  src: url("../sass/typography/fonts/icomoon.eot?2zqqau");
+  src: url("../sass/typography/fonts/icomoon.eot?#iefix2zqqau") format("embedded-opentype"), url("../sass/typography/fonts/icomoon.woff?2zqqau") format("woff"), url("fonts/icomoon.ttf?2zqqau") format("truetype"), url("../sass/typography/fonts/icomoon.svg?2zqqau#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 
-1: $green:
-2: 
-3: 
-4: 
-5: // Login Page==========================
-6: 
+.icon-GoOutsideLogo:before {
+  content: "\e601"; }
 
-Backtrace:
-sass/color/_color.sass:1
-sass/application.sass:4
-/Users/MaxBrockman/.rvm/gems/ruby-2.1.1/gems/sass-3.3.8/lib/sass/engine.rb:749:in `parse_variable'
-/Users/MaxBrockman/.rvm/gems/ruby-2.1.1/gems/sass-3.3.8/lib/sass/engine.rb:649:in `parse_line'
-/Users/MaxBrockman/.rvm/gems/ruby-2.1.1/gems/sass-3.3.8/lib/sass/engine.rb:543:in `build_tree'
-/Users/MaxBrockman/.rvm/gems/ruby-2.1.1/gems/sass-3.3.8/lib/sass/engine.rb:562:in `block in append_children'
-/Users/MaxBrockman/.rvm/gems/ruby-2.1.1/gems/sass-3.3.8/lib/sass/engine.rb:561:in `each'
-/Users/MaxBrockman/.rvm/gems/ruby-2.1.1/gems/sass-3.3.8/lib/sass/engine.rb:561:in `append_children'
-/Users/MaxBrockman/.rvm/gems/ruby-2.1.1/gems/sass-3.3.8/lib/sass/engine.rb:412:in `_to_tree'
-/Users/MaxBrockman/.rvm/gems/ruby-2.1.1/gems/sass-3.3.8/lib/sass/engine.rb:305:in `to_tree'
-/Users/MaxBrockman/.rvm/gems/ruby-2.1.1/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:295:in `block in visit_import'
-/Users/MaxBrockman/.rvm/gems/ruby-2.1.1/gems/sass-3.3.8/lib/sass/stack.rb:88:in `block in with_import'
-/Users/MaxBrockman/.rvm/gems/ruby-2.1.1/gems/sass-3.3.8/lib/sass/stack.rb:121:in `with_frame'
-/Users/MaxBrockman/.rvm/gems/ruby-2.1.1/gems/sass-3.3.8/lib/sass/stack.rb:88:in `with_import'
-/Users/MaxBrockman/.rvm/gems/ruby-2.1.1/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:294:in `visit_import'
-/Users/MaxBrockman/.rvm/gems/ruby-2.1.1/gems/sass-3.3.8/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/MaxBrockman/.rvm/gems/ruby-2.1.1/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
-/Users/MaxBrockman/.rvm/gems/ruby-2.1.1/gems/sass-3.3.8/lib/sass/stack.rb:79:in `block in with_base'
-/Users/MaxBrockman/.rvm/gems/ruby-2.1.1/gems/sass-3.3.8/lib/sass/stack.rb:121:in `with_frame'
-/Users/MaxBrockman/.rvm/gems/ruby-2.1.1/gems/sass-3.3.8/lib/sass/stack.rb:79:in `with_base'
-/Users/MaxBrockman/.rvm/gems/ruby-2.1.1/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:152:in `visit'
-/Users/MaxBrockman/.rvm/gems/ruby-2.1.1/gems/sass-3.3.8/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Users/MaxBrockman/.rvm/gems/ruby-2.1.1/gems/sass-3.3.8/lib/sass/tree/visitors/base.rb:52:in `map'
-/Users/MaxBrockman/.rvm/gems/ruby-2.1.1/gems/sass-3.3.8/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Users/MaxBrockman/.rvm/gems/ruby-2.1.1/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:161:in `block in visit_children'
-/Users/MaxBrockman/.rvm/gems/ruby-2.1.1/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:173:in `with_environment'
-/Users/MaxBrockman/.rvm/gems/ruby-2.1.1/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:160:in `visit_children'
-/Users/MaxBrockman/.rvm/gems/ruby-2.1.1/gems/sass-3.3.8/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Users/MaxBrockman/.rvm/gems/ruby-2.1.1/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:180:in `visit_root'
-/Users/MaxBrockman/.rvm/gems/ruby-2.1.1/gems/sass-3.3.8/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/MaxBrockman/.rvm/gems/ruby-2.1.1/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:151:in `visit'
-/Users/MaxBrockman/.rvm/gems/ruby-2.1.1/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/Users/MaxBrockman/.rvm/gems/ruby-2.1.1/gems/sass-3.3.8/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Users/MaxBrockman/.rvm/gems/ruby-2.1.1/gems/sass-3.3.8/lib/sass/tree/root_node.rb:20:in `render'
-/Users/MaxBrockman/.rvm/gems/ruby-2.1.1/gems/sass-3.3.8/lib/sass/engine.rb:274:in `render'
-/Users/MaxBrockman/.rvm/gems/ruby-2.1.1/gems/sass-3.3.8/lib/sass/plugin/compiler.rb:378:in `update_stylesheet'
-/Users/MaxBrockman/.rvm/gems/ruby-2.1.1/gems/sass-3.3.8/lib/sass/plugin/compiler.rb:189:in `block in update_stylesheets'
-/Users/MaxBrockman/.rvm/gems/ruby-2.1.1/gems/sass-3.3.8/lib/sass/plugin/compiler.rb:186:in `each'
-/Users/MaxBrockman/.rvm/gems/ruby-2.1.1/gems/sass-3.3.8/lib/sass/plugin/compiler.rb:186:in `update_stylesheets'
-/Users/MaxBrockman/.rvm/gems/ruby-2.1.1/gems/sass-3.3.8/lib/sass/plugin/compiler.rb:357:in `on_file_changed'
-/Users/MaxBrockman/.rvm/gems/ruby-2.1.1/gems/sass-3.3.8/lib/sass/plugin/compiler.rb:250:in `block in watch'
-/Users/MaxBrockman/.rvm/gems/ruby-2.1.1/gems/sass-3.3.8/vendor/listen/lib/listen/listener.rb:252:in `call'
-/Users/MaxBrockman/.rvm/gems/ruby-2.1.1/gems/sass-3.3.8/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-/Users/MaxBrockman/.rvm/gems/ruby-2.1.1/gems/sass-3.3.8/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-/Users/MaxBrockman/.rvm/gems/ruby-2.1.1/gems/sass-3.3.8/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
-/Users/MaxBrockman/.rvm/gems/ruby-2.1.1/gems/sass-3.3.8/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
-/Users/MaxBrockman/.rvm/gems/ruby-2.1.1/gems/sass-3.3.8/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Invalid variable: \"$green:\".\A         on line 1 of sass/color/_color.sass\A         from line 4 of sass/application.sass\A \A 1: $green:\A 2: \A 3: \A 4: \A 5: // Login Page==========================\A 6: "; }
+.icon-menu_logo_button:before {
+  content: "\e600"; }
+
+@font-face {
+  font-family: 'haymaker';
+  src: url("../sass/typography/fonts/Haymaker.ttf");
+  font-weight: normal;
+  font-size: normal; }
+h5 {
+  color: #69ad57; }
+
+.login_container {
+  background-color: rgba(0, 48, 53, 0.8); }
+  .login_container h4 {
+    color: #69ad57; }
+
+.login_form_buttons a.button_login:hover, .login_form_buttons a.button_signup:hover {
+  background-color: #9ac69b;
+  color: #003035; }
+
+.login_input input {
+  color: #bf7532; }
+.login_input label {
+  color: #69ad57; }
+
+.hidden:hover {
+  opacity: 1; }
+
+.comingsoon {
+  opacity: 0.3; }
+
+.user_side_menu {
+  background-color: rgba(0, 48, 53, 0.8); }
+
+.user_list a {
+  color: white; }
+.user_list li:hover {
+  background-color: #9ac69b; }
+
+.user_stats h3 {
+  color: #bf7532; }
+.user_stats h5 {
+  color: #69ad57; }
+
+.activity_list_item {
+  background-color: #2c6f34;
+  color: white; }
+
+.button_login {
+  width: 5em;
+  border-radius: 0.2em;
+  background-color: #bf7532;
+  text-decoration: none;
+  align-content: center;
+  justify-content: center;
+  font-size: 1em;
+  color: white; }
+
+.button_signup {
+  height: auto;
+  width: 5em;
+  border-radius: 0.2em;
+  background-color: #2c6f34;
+  text-decoration: none;
+  align-content: center;
+  justify-content: center;
+  font-size: 1.618em;
+  color: white; }
+
+.activity {
+  line-height: 1.7em;
+  font-size: 1.618em;
+  background-color: #69ad57;
+  padding: 0.5em;
+  margin: 0.2em auto;
+  border: 0.2em solid white;
+  border-radius: 0.5em;
+  width: 70%;
+  text-align: left;
+  text-decoration: none;
+  color: white; }
+  .activity.hiking {
+    background: url(http://i.imgur.com/3Rsc4Up.png); }
+  .activity.cycling {
+    background: url(http://i.imgur.com/FiZyAk9.png?1);
+    color: #003035; }
+  .activity.water {
+    background: url(http://i.imgur.com/8ew7J2u.png?1);
+    color: #003035; }
+  .activity.snow {
+    background: url(http://i.imgur.com/LA598VO.png?1);
+    color: white; }
+  .activity:hover {
+    border: 0.2em solid #2c6f34; }
+
+.index {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 45em;
+  width: 100%; }
+
+main {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  align-content: center; }
+
+body {
+  font-family: "haymaker"; }
+
+.login_container {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 30em;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 0.5em;
+  padding: 2em 0; }
+
+.login_logo {
+  margin-top: 1em; }
+
+.login_form {
+  display: flex;
+  flex-flow: column nowrap;
+  margin-bottom: 2em; }
+
+.login_form_buttons {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center; }
+  .login_form_buttons a {
+    font-size: 1.618em;
+    line-height: 2em;
+    padding: 0 0.5em;
+    margin: 0 0.2em; }
+
+.login_form_inputs {
+  display: flex;
+  flex-flow: column nowrap;
+  font-size: 1.618em;
+  width: 85%;
+  margin: 1em auto; }
+
+.login_input_container {
+  width: 14.3em; }
+
+.login_input {
+  flex-wrap: nowrap;
+  text-align: right;
+  width: 100%;
+  font-size: 0.8em; }
+  .login_input input {
+    flex: 1;
+    height: 1.618em;
+    font-size: 0.8em;
+    font-family: "haymaker";
+    width: 12.5em;
+    margin: 0.3em 0;
+    text-decoration: none;
+    background: none;
+    border-radius: 0;
+    border: transparent;
+    border-bottom: 2px solid white;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+    .login_input input:focus {
+      border-bottom: 2px solid #acd34c;
+      outline: none; }
+  .login_input label {
+    margin-left: 0;
+    font-size: 1vm;
+    flex: 1; }
+
+.login_social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1em; }
+  .login_social h4 {
+    margin-right: 0.3em;
+    font-size: 1.618em; }
+  .login_social a {
+    margin: 0 0.4em; }
+
+.user_home {
+  width: 100%;
+  overflow: hidden; }
+
+.user_photo {
+  width: 70%;
+  border: 0.2em solid #69ad57;
+  border-radius: 0.2em; }
+
+.user_svg {
+  height: 4em;
+  width: 4em;
+  margin: 0.5em auto; }
+
+.user_list li {
+  text-align: left;
+  padding: 0.2em 0;
+  width: 95%;
+  border-bottom: 0.1em solid #9ac69b;
+  line-height: 1em; }
+  .user_list li a {
+    font-size: 1em;
+    width: 100%;
+    text-decoration: none;
+    margin-left: 1em; }
+
+.user_stats h3 {
+  font-size: 1.618em;
+  margin: 0.5em 0; }
+.user_stats h5 {
+  margin: 0.2em 0; }
+
+.icon-menu_logo_button {
+  font-size: 3em; }
+
+.icon-GoOutsideLogo {
+  font-size: 3em;
+  line-height: 1.5em; }
+
+.activity_map {
+  height: 20em;
+  width: 100%; }
+
+.activity_list_item {
+  margin: 0.7em;
+  height: 5em;
+  width: 96%;
+  border: 0.2em solid white;
+  border-radius: 0.5em;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around; }
+  .activity_list_item h1 {
+    line-height: 5em; }
+  .activity_list_item .rating {
+    line-height: 5em; }
+
+.hidden {
+  display: none; }
+
+.activity {
+  display: flex;
+  flex-flow: row nowrap; }
+
+.activity:hover .hidden {
+  display: flex;
+  margin-left: 1em;
+  font-size: 0.8em; }
+
+.user_side_menu {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 25.755em;
+  left: -25.755em;
+  height: 100%;
+  -webkit-transform: translate(0px, 0px);
+  -moz-transform: translate(0px, 0px);
+  -o-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
+  -webkit-transition: 0.30s ease;
+  -moz-transition: 0.30s ease;
+  -o-transition: 0.30s ease;
+  transition: 0.30s ease; }
+
+.user_side_menu.active {
+  -webkit-transform: translate(25.755em, 0px);
+  -moz-transform: translate(25.755em, 0px);
+  -o-transform: translate(25.755em, 0px);
+  -ms-transform: translate(25.755em, 0px);
+  transform: translate(25.755em, 0px); }
+
+.activity_location {
+  -webkit-transform: translate(0px, 0px);
+  -moz-transform: translate(0px, 0px);
+  -o-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
+  -webkit-transition: 0.30s ease;
+  -moz-transition: 0.30s ease;
+  -o-transition: 0.30s ease;
+  transition: 0.30s ease; }
+
+.activity_location.active {
+  -webkit-transform: translate(25.725em, 0px);
+  -moz-transform: translate(25.725em, 0px);
+  -o-transform: translate(25.725em, 0px);
+  -ms-transform: translate(25.725em, 0px);
+  transform: translate(25.725em, 0px); }
+
+.menu-link {
+  background-color: transparent;
+  border: hidden;
+  color: white;
+  left: 0px; }
+
+.menu-link:active {
+  border: none;
+  color: #69ad57;
+  outline: none; }
+
+.menu-link:focus {
+  box-shadow: none;
+  outline: none; }
+
+.icon-GoOutsideLogo {
+  color: white; }
+
+body {
+  font-size: 1.25em; }
+
+.rating i {
+  display: inline-block;
+  width: 0;
+  height: 1.5em;
+  border-width: 0 0.75em;
+  border-style: solid;
+  border-color: #eee;
+  border-radius: .22em;
+  color: white;
+  background: #eee;
+  font-style: normal;
+  line-height: 1.6em;
+  text-indent: -0.5em;
+  text-shadow: 1px 0 1px #b3b3b3; }
+
+[data-rate^='1'] .star-1 {
+  border-color: #cc9d2b;
+  background: #cc9d2b; }
+
+[data-rate='1.5'] .star-2 {
+  border-left-color: #cc9d2b; }
+
+[data-rate^='2'] .star-1, [data-rate^='2'] .star-2 {
+  border-color: #d6942d;
+  background: #d6942d; }
+
+[data-rate='2.5'] .star-3 {
+  border-left-color: #d6942d; }
+
+[data-rate^='3'] .star-1, [data-rate^='3'] .star-2, [data-rate^='3'] .star-3 {
+  border-color: #bf7532;
+  background: #bf7532; }
+
+[data-rate='3.5'] .star-4 {
+  border-left-color: #bf7532; }
+
+[data-rate^='4'] .star-1, [data-rate^='4'] .star-2, [data-rate^='4'] .star-3, [data-rate^='4'] .star-4 {
+  border-color: #d6652d;
+  background: #d6652d; }
+
+[data-rate='4.5'] .star-5 {
+  border-left-color: #d6652d; }
+
+[data-rate='5'] i {
+  border-color: #cc492b;
+  background: #cc492b; }
+
+/** Print */
+@media print {
+  .rating {
+    -webkit-print-color-adjust: exact; }
+    .rating i {
+      text-shadow: none; } }
+html.html_login {
+  background: url(http://i.imgur.com/ZOhM6zC.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+html.html_user {
+  background: url(http://i.imgur.com/ZOhM6zC.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+html.html_activity {
+  background: url(http://i.imgur.com/YCaFGmB.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+@media all and (max-width: 400px) {
+  body {
+    font-size: 0.619em; }
+
+  .user_list li {
+    line-height: 3em; }
+
+  .user_stats {
+    margin-left: 1em; }
+
+  .user_photo {
+    margin: 1.618em 0;
+    width: 80%; } }
+@media all and (max-width: 600px) and (min-width: 401px) {
+  body {
+    font-size: 1em; }
+
+  .user_list li {
+    line-height: 3em; }
+
+  .user_stats {
+    margin-left: 1em; }
+
+  .user_photo {
+    margin: 1.618em 0;
+    width: 80%; } }
+@media all and (max-width: 900px) and (min-width: 601px) {
+  .user_photo {
+    margin: 1.618em;
+    width: 70%; }
+
+  .user_list li {
+    line-height: 3em; }
+
+  .user_stats {
+    margin-left: 1em; }
+
+  .user_photo {
+    margin: 1.618em 0;
+    width: 10em;
+    height: 10em; } }
+@media all and (min-width: 901px) {
+  .menu-link {
+    display: none; }
+
+  .user_side_menu {
+    width: 17.755em;
+    left: -17.755em;
+    -webkit-transform: translate(17.755em, 0px);
+    -moz-transform: translate(17.755em, 0px);
+    -o-transform: translate(17.755em, 0px);
+    -ms-transform: translate(17.755em, 0px);
+    transform: translate(17.755em, 0px); }
+
+  .activity_location {
+    -webkit-transform: translate(17.755em, 0px);
+    -moz-transform: translate(17.755em, 0px);
+    -o-transform: translate(17.755em, 0px);
+    -ms-transform: translate(17.755em, 0px);
+    transform: translate(17.755em, 0px);
+    width: 75%; } }

@@ -1,3 +1,4 @@
+
 // Anything less than 400px ie an Iphone
 @media all and (max-width: 400px)
   body
@@ -12,7 +13,7 @@
 
   .user_photo
     margin: 1.618em 0
-    width: 90%
+    width: 80%
 
 // Media bigger than the iphon but less than tablet
 @media all and (max-width: 600px) and (min-width: 401px)
@@ -23,9 +24,32 @@
     li
       line-height: 3em
 
+  .user_stats
+    margin-left: 1em
+
+  .user_photo
+    margin: 1.618em 0
+    width: 80%
+
+@media all and (max-width: 900px) and (min-width: 601px)
+
+  .user_photo
+    margin: 1.618em
+    width: 70%
+
+  .user_list
+    li
+      line-height: 3em
+
+  .user_stats
+    margin-left: 1em
+
+  .user_photo
+    margin: 1.618em 0
+    width: 10em
+    height: 10em
 
 // Media bigger than Ipad and tablets id desktop
-
 @media all and (min-width: 901px)
   .menu-link
     display: none

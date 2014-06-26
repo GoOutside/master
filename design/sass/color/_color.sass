@@ -1,5 +1,5 @@
-$green:
-
+$light-green: #9ac69b
+$mid-green: #69ad57
 
 
 // Login Page==========================
@@ -13,14 +13,14 @@ $green:
   a
     &.button_login, &.button_signup
       &:hover
-        background-color: #9ac69b
+        background-color: $light-green
         color: #003035
 
 .login_input
   input
     color: #bf7532
   label
-    color: #69ad57
+    color: $mid-green
 
 // Activity Page==========================
 
@@ -37,14 +37,15 @@ $green:
 .user_list
   a
     color: white
-  &:hover
-    background-color: #9ac69b
+  li
+    &:hover
+      background-color: $light-green
 
 .user_stats
   h3
     color: #bf7532
   h5
-    color: #69ad57
+    color: $mid-green
 
 //User activity menu=========================
 

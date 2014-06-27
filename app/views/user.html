@@ -1,6 +1,7 @@
 <div class="html_user" >
 <div>
       <article class="user_home">
+<!-- This is the side menu html with lists being populated by js. -->
         <section class="user_side_menu">
           <section class="user_stats">
             <img src="http://i.imgur.com/rbcoO4a.jpg" class="user_photo">
@@ -17,23 +18,21 @@
                 <a href="">Recomended</a>
               </li>
               <li>
-                <a href="">Blah</a>
+                <a href="">Distance To Activity</a>
               </li>
               <li>
-                <a href="">Blah</a>
+                <a href="">Puppie Pics!</a>
               </li>
               <li>
-                <a href="">Blah</a>
-              </li>
-              <li>
-                <a href="">Blah</a>
+                <a href="">Settings</a>
               </li>
             </ul>
             <div class="login_form_buttons">
-              <a ng-click="signout()" class="button_login">Logout</a>
+              <a ng-click='signout()' href="#" class="button_login">Logout</a>
             </div>
           </section>
         </section>
+<!-- Activity location is the column displaying right that contains both map and activity_list_items -->
         <section class="activity_location">
           <div>
             <button ng-click='toggle()' class="menu-link icon-menu_logo_button"></button>
@@ -41,7 +40,9 @@
           <div class="activity_map">
 
           </div>
+<!-- Activity list is the column of list items that have to do with map items -->
           <section class="activity_list">
+<!-- Activity list Items are each individual containers with a favorite button logo, the title of the hike, and the avg rating. as well as a drop panel that has a description, an image and a link to GOOGLE Maps for navigation! -->
             <div class="activity_list_item">
               <div class="activity_list_item_top">
                 <a href="" class="icon-GoOutsideLogo">
@@ -57,12 +58,19 @@
                 </div>
               </div>
               <div class="panel">
-                <ul>
-                  <li>
-                    <p>This is a brief description of a hike and what it's all about</p>
-
-                  </li>
-                </ul>
+                <div class="panel_container">
+                  <div class="panel_description">
+                    <ul>
+                      <li>
+                        <p>This is a brief description of a hike and what it's all about</p>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="panel_options">
+                    <img src="http://i.imgur.com/YCaFGmB.jpg" class="panel_options_img">
+                    <a href="#" class="button_signup">Let's GO!</a>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="activity_list_item">
@@ -80,11 +88,19 @@
                 </div>
               </div>
               <div class="panel">
-                <ul>
-                  <li>
-                    <p>This is a brief description of a hike and what it's all about</p>
-                  </li>
-                </ul>
+                <div class="panel_container">
+                  <div class="panel_description">
+                    <ul>
+                      <li>
+                        <p>This is a brief description of a hike and what it's all about</p>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="panel_options">
+                    <img src="http://i.imgur.com/YCaFGmB.jpg" class="panel_options_img">
+                    <a href="#" class="button_signup">Let's GO!</a>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="activity_list_item">
@@ -102,11 +118,19 @@
                 </div>
               </div>
               <div class="panel">
-                <ul>
-                  <li>
-                    <p>This is a brief description of a hike and what it's all about</p>
-                  </li>
-                </ul>
+                <div class="panel_container">
+                  <div class="panel_description">
+                    <ul>
+                      <li>
+                        <p>This is a brief description of a hike and what it's all about</p>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="panel_options">
+                    <img src="http://i.imgur.com/YCaFGmB.jpg" class="panel_options_img">
+                    <a href="#" class="button_signup">Let's GO!</a>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="activity_list_item">
@@ -124,12 +148,19 @@
                 </div>
               </div>
               <div class="panel">
-                <ul>
-                  <li>
-                    <p>This is a brief description of a hike and what it's all about!</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sem velit, convallis vel blandit eget, rutrum ut lorem. Vestibulum at velit quis sem mattis vulputate.</p>
-                  </li>
-                </ul>
+                <div class="panel_container">
+                  <div class="panel_description">
+                    <ul>
+                      <li>
+                        <p>This is a brief description of a hike and what it's all about</p>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="panel_options">
+                    <img src="http://i.imgur.com/YCaFGmB.jpg" class="panel_options_img">
+                    <a href="#" class="button_signup">Let's GO!</a>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="activity_list_item">
@@ -147,19 +178,24 @@
                 </div>
               </div>
               <div class="panel">
-                <ul>
-                  <li>
-                    <p>This is a brief description of a hike and what it's all about</p>
-                  </li>
-                </ul>
+                <div class="panel_container">
+                  <div class="panel_description">
+                    <ul>
+                      <li>
+                        <p>This is a brief description of a hike and what it's all about</p>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="panel_options">
+                    <img src="http://i.imgur.com/YCaFGmB.jpg" class="panel_options_img">
+                    <a href="#" class="button_signup">Let's GO!</a>
+                  </div>
+                </div>
               </div>
             </div>
 
           </section>
         </section>
       </article>
-      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-      <script src="user_home.js"></script>
-      <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
     </div>
 </div>

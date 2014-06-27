@@ -492,35 +492,40 @@ html.html_activity {
     font-size: 1em; }
 
   .user_list li {
-    line-height: 3em; }
+    line-height: 2em; }
 
   .user_stats {
     margin-left: 1em; }
 
   .user_photo {
     margin: 1.618em 0;
-    width: 70%; } }
+    width: 50%; } }
 @media all and (max-width: 900px) and (min-width: 601px) {
-  .user_photo {
-    margin: 1.618em;
-    width: 70%; }
+  .activity_list_item {
+    line-height: 1.5em; }
 
   .user_list li {
-    line-height: 3em; }
+    line-height: 1em; }
 
   .user_stats {
     margin-left: 1em; }
 
   .user_photo {
-    margin: 1.618em 0;
-    width: 10em;
-    height: 10em; } }
+    margin: 0.5em;
+    width: 45%; } }
 @media all and (min-width: 901px) {
+  .user_photo {
+    width: 60%;
+    margin-left: 0.5em; }
+
   .user_stats {
-    margin: 1em; }
+    margin: 0.8em; }
 
   .menu-link {
     display: none; }
+
+  .user_list li {
+    line-height: 1em; }
 
   .activity_list_item .panel {
     height: auto; }

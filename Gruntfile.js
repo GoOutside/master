@@ -82,11 +82,11 @@ module.exports = function(grunt) {
     },
     watch: {
       scripts: {
-        files: ['app/js/**/*.js','test/*.js', 'app/**/*.html'],
+        files: ['app/js/**/*.js', 'app/**/*.html'],
         tasks: ['build']
       },
       express: {
-          files: ['server.js', 'routes/*.js', 'models/*.js'],
+          files: ['server.js', 'routes/routes.js', 'models/User.js'],
           tasks: ['server'],
           options: {
             spawn: false
@@ -110,7 +110,7 @@ module.exports = function(grunt) {
 
   });
 
-  grunt.registerTask('serve', [ 'build', 'express:dev','watch' ]);
+  grunt.registerTask('serve', [ 'build', 'express:dev' ]);
   grunt.registerTask('server', 'serve');
   grunt.registerTask('test:acceptance',['express:dev','casper']);
   grunt.registerTask('test:api','simplemocha');

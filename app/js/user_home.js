@@ -1,4 +1,4 @@
-$(".menu-link").click(function(){
+/*$(".menu-link").click(function(){
   $(".user_side_menu").toggleClass("active");
   $(".activity_location").toggleClass("active");
 });
@@ -12,4 +12,4 @@ $(".menu-link").click(function(){
     $(this).find('.panel').slideToggle('fast', 0);
   });
 
-
+*/

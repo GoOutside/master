@@ -12,6 +12,20 @@ var passport = require('passport');
 // var session = require('express-session');
 var fs = require('fs');
 
+
+console.log("one");
+//Luke
+var db = require('./models/db');
+console.log(5);
+var routes = require('./routes/routes');
+console.log(6);
+var index = require('./routes/index');
+
+//var morgan  = require('morgan')
+
+//var errorhandler = require('errorhandler');
+//var expressHbs = require('express3-handlebars');
+console.log("2");
 //var configDB = require('./config/database.js');
 
 //mongoose.connect(configDB.url);
@@ -23,14 +37,30 @@ var jwtauth = require('./config/auth')(app);
 app.use(bodyparser.json());
 app.use(express.static(__dirname + '/client'));
 app.use(passport.initialize());
+console.log('2.5');
+//Luke
+// app.engine('html', expressHbs({extname:'html', defaultLayout:'index.html'}));
+// app.set('view engine', 'html');
+//app.use(morgan());
+
+//app.use(errorhandler());
+
+console.log("3");
 
 app.set('jwtTokenSecret', process.env.JWT_SECRET || 'takeahiketakeahiketakeahike');
 require('./config/passport')(passport);
 require('./routes/routes')(app, passport);
 
-//protected route
-//require(./routes/protected')(app, passport, jwtauth.auth);
-//in the app.post or app.get call include 'jwtauth' after the route and before the callback funct.
+//Luke
+//app.get('/', routes.index);
+
+app.get('/api/v1/notes', index.collection);
+app.get('/api/v1/notes2', index.index);
+
+app.get('/api/v1/notes4', index.collection2);
+app.get('/api/v1/note/:id', index.findById);
+app.get('/api/v1/notes5', index.findByLocation);
+//app.get('/api/v1/client.js', index.findClient);
 
 
 var options = {
@@ -41,26 +71,8 @@ var options = {
 mongoose.connect('mongodb://localhost/go-outside');
 
 var server = https.createServer(options, app);
-server.listen(process.env.PORT || 3000, function() {
-  console.log('server running on port: ' + process.env.PORT || 3000);
+server.listen(3000, function() {
+  //console.log('server running on port: ' + process.env.PORT || 3000);
+  //console.log(process.env.PORT);
+  console.log("3000!!");
 });
-
-// app.set('port', process.env.PORT || 3000);
-// app.set('apiBase', '/api/v0.0.1');
-
-// app.use(logger('dev'));
-// app.use(cookieParser());
-
-// app.set('view engine', 'hbs');
-
-// //app.use(session({secret: 'gohikegohikegohike'})); // we can use secret key here
-// app.use(passport.session());
-// app.use(flash());
-
-// require('./routes/routes.js')(app, passport);
-// require('./config/passport')(passport);
-
-// var server = http.createServer(app);
-// server.listen(app.get('port'), function() {
-//   console.log('Server runnning on ' + app.get('port'));
-//});

@@ -2,8 +2,6 @@
  * GET home page.
  */
 
-var hikedata = require('../models/hikes');
-
 var dbData = require('../models/db');
 
 

@@ -17,7 +17,9 @@
     "passport-facebook": "^1.0.3",
     "passport-http": "*",
     "passport-local": "^1.0.0",
-    "passport-twitter": "^1.0.2"
+    "passport-twitter": "^1.0.2",
+    "leaflet": "^0.7.3",
+    "angular-leaflet-directive": "^0.7.6"
   },
   "devDependencies": {
     "browserify": "^4.1.3",
@@ -37,6 +39,9 @@
     "grunt-simple-mocha": "^0.4.0",
     "matchdep": "^0.3.0",
     "mocha": "^1.18.2",
-    "superagent": "^0.18.0"
+    "superagent": "^0.18.0",
+    "jquery": "^2.1.1",
+    "leaflet": "^0.7.3",
+    "angular-leaflet-directive": "^0.7.6"
   }
 }

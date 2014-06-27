@@ -12,6 +12,7 @@ var goApp = angular.module('goApp', ['ngRoute', 'base64', 'ngCookies']);
 require('../controllers/loginController')(goApp);
 require('../controllers/userController')(goApp);
 require('../controllers/detailsController')(goApp);
+require('../controllers/demoController')(goApp);
 //require('mapLogic.js')(goApp);
 
 goApp.config(['$routeProvider', function($routeProvider){
@@ -31,32 +32,15 @@ goApp.config(['$routeProvider', function($routeProvider){
     .when('/details', {
       templateUrl: 'views/details.html',
       controller: 'detailsController'
+    })
+    .when('/user', {
+      templateUrl: 'views/user.html',
+      controller: 'demoController'
     });
     //.otherwise({
       //redirectTo: '/login'
     //});
 }]);
-angular.module("goApp", ["leaflet-directive"]).controller('DemoController',
-function($scope) {
-    angular.extend($scope, {
-        london: {
-            lat: 51.505,
-            lng: -0.09,
-            zoom: 8
-        },
-        defaults: {
-            zoomAnimation: false,
-            markerZoomAnimation: false,
-            fadeAnimation: false
-        },
-        markers: {
-            london: {
-                lat: 51.505,
-                lng: -0.09,
-            }
-        }
-    });
-});
 
 
 

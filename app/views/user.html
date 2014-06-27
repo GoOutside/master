@@ -36,25 +36,16 @@
           <div>
             <button class="menu-link icon-menu_logo_button"></button>
           </div>
-          <div class="activity_map">
-<!--
-          <div data-ng-controller="userController" data-ng-init="init(mapLogic())"></div>
-          
-          <div ng-controller="userController">
-              <form>
-                  Latitude : <input type="number" step="any" ng-model="center.lat">
-                  Longitude : <input type="number" step="any" ng-model="center.lng">
-                  Zoom : <input type="number" step="any" ng-model="center.zoom">
-              </form>
-              <leaflet center="center"></leaflet>
-          </div>
-          -->
-          <div id="map">
+          <div class="activity_map" ng-click="mapFunction()">
 
-            <style>
-              #map { height: 70% }
-            </style>
-          </div>
+          
+            
+            
+          <ng-controller="DemoController">
+            <leaflet width="640px" height="480px" center="london" defaults="defaults" markers="markers"></leaflet>
+          </ng-controller>
+            
+          
 
           </div>
           <section class="activity_list">

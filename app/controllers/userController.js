@@ -16,26 +16,7 @@ module.exports = function(app) {
       $location.path('/');
       console.log('signout');
     };
-    
-    //$scope.mapLogic = function() {
-    	//console.log("Map LOGIC FILE:");
-    	//console.log(mapLogic);
-    //};
-    
-    //console.log('UserController Success!!');
 
   });
-  app.controller("userController", [ '$scope', function($scope) {
-    angular.extend($scope, {
-        center: {
-            lat: 40.095,
-            lng: -3.823,
-            zoom: 4
-        },
-        defaults: {
-            scrollWheelZoom: false
-        }
-    });
-}]);
 };
 

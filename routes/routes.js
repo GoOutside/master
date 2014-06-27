@@ -7,11 +7,12 @@ var User = require('../models/User');
 module.exports = function (app, passport) {
   app.post('/api/v0_0_1/users', function (req, res) {
     User.findOne({'basic.email': req.body.email}, function (err, user){
+
       if(err) {
         return res.json(500, err);
       }
       if(user) {
-        return res.json(401, {'msg': 'email in use'});
+        return res.json(409, {'msg': 'email in use'});
       }
       var newUser = new User();
       newUser.basic.email = req.body.email;
@@ -21,14 +22,18 @@ module.exports = function (app, passport) {
         if(err) {
           return res.json(500, err);
         }
-        return res.json(resUser);
+        return res.json({'jwt': resUser.createJWTToken(app)});
       });
     });
   });
 
-  app.get('/api/v0_0_1/users', passport.authenticate('basic', {session: false}), function (req, res) {
-    console.log('authenticated');
-    return res.json({'jwt': req.user.createJWTToken(app)});
+  app.get('/api/v0_0_1/users',
+    passport.authenticate('basic', {
+      session: false,
+      failureRedirect: '/#/login'
+    }),
+    function (req, res) {
+      return res.json({'jwt': req.user.createJWTToken(app)});
   });
 
 };
@@ -146,4 +151,3 @@ module.exports = function (app, passport) {
   //   // if they aren't redirect them to the home page
   //   res.redirect('/');
   // }
-

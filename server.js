@@ -28,7 +28,6 @@ app.set('jwtTokenSecret', process.env.JWT_SECRET || 'takeahiketakeahiketakeahike
 require('./config/passport')(passport);
 require('./routes/routes')(app, passport);
 
-
 var options = {
   key: fs.readFileSync('config/server.key'),
   cert: fs.readFileSync('config/server.crt')
@@ -41,22 +40,3 @@ server.listen(process.env.PORT || 3000, function() {
   console.log('server running on port: ' + process.env.PORT || 3000);
 });
 
-// app.set('port', process.env.PORT || 3000);
-// app.set('apiBase', '/api/v0.0.1');
-
-// app.use(logger('dev'));
-// app.use(cookieParser());
-
-// app.set('view engine', 'hbs');
-
-// //app.use(session({secret: 'gohikegohikegohike'})); // we can use secret key here
-// app.use(passport.session());
-// app.use(flash());
-
-// require('./routes/routes.js')(app, passport);
-// require('./config/passport')(passport);
-
-// var server = http.createServer(app);
-// server.listen(app.get('port'), function() {
-//   console.log('Server runnning on ' + app.get('port'));
-//});

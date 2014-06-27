@@ -20,7 +20,7 @@
     "angular-route": "~1.2.18",
     "angular-base64": "~2.0.2",
     "angular-cookies": "~1.2.18",
-    "jquery": "~2.1.1",
+    "jquery": "~1.9",
     "modernizr": "~2.8.2"
   }
 }

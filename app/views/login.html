@@ -21,11 +21,12 @@
                 <label>Password:</label>
                 <input ng-model='user.password' type="password" placeholder="Type your password"></input>
               </div>
+                <p>{{failedLogin}}</p>
             </div>
           </div>
           <div class="login_form_buttons">
-            <a ng-click='signin()' href="#" class="button_login">Login</a>
-            <a href="#" class="button_signup">Sign up</a>
+            <a ng-click='signin()' class="button_login">Login</a>
+            <a ng-click='createUser()' class="button_signup">Sign up</a>
           </div>
         </form>
         </div>

@@ -1,13 +1,14 @@
 $light-green: #9ac69b
 $mid-green: #69ad57
-
+$dark-green: #2c6f34
+$brown: #bf7532
 
 // Login Page==========================
 
 .login_container
   background-color: transparentize(#003035, .2)
   h4
-    color: #69ad57
+    color: $mid-green
 
 .login_form_buttons
   a
@@ -18,7 +19,7 @@ $mid-green: #69ad57
 
 .login_input
   input
-    color: #bf7532
+    color: $brown
   label
     color: $mid-green
 
@@ -42,7 +43,7 @@ $mid-green: #69ad57
   a
     color: white
   ul
-    margin-bottom: 0.8em
+    margin-bottom: 1em
   li
     &:hover
       background-color: $light-green
@@ -50,16 +51,21 @@ $mid-green: #69ad57
 
 .user_stats
   h3
-    color: #bf7532
+    color: $brown
   h5
     color: $mid-green
 
 //User activity menu=========================
 
 .activity_list_item
-  background-color: #2c6f34
+  background-color: $dark-green
   color: white
 
 h5
   color: $mid-green
 
+.panel_options
+  .button_signup
+    &:hover
+      background-color: white
+      color: $mid-green

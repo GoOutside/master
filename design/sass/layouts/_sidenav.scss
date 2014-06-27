@@ -37,11 +37,11 @@
 }
 
 .activity_location.active {
-  -webkit-transform: translate(25.725em, 0px);
-  -moz-transform: translate(25.725em, 0px);
-  -o-transform: translate(25.725em, 0px);
-  -ms-transform: translate(25.725em, 0px);
-  transform: translate(25.725em, 0px);
+  -webkit-transform: translate(25.755em, 0px);
+  -moz-transform: translate(25.755em, 0px);
+  -o-transform: translate(25.755em, 0px);
+  -ms-transform: translate(25.755em, 0px);
+  transform: translate(25.755em, 0px);
 }
 
 .menu-link {
@@ -53,7 +53,7 @@
 
 .menu-link:active {
   border: none;
-  color: #69ad57;
+  color: $mid-green;
   outline: none;
 }
 

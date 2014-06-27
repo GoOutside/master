@@ -1,0 +1,71 @@
+$light-green: #9ac69b
+$mid-green: #69ad57
+$dark-green: #2c6f34
+$brown: #bf7532
+
+// Login Page==========================
+
+.login_container
+  background-color: transparentize(#003035, .2)
+  h4
+    color: $mid-green
+
+.login_form_buttons
+  a
+    &.button_login, &.button_signup
+      &:hover
+        background-color: $light-green
+        color: white
+
+.login_input
+  input
+    color: $brown
+  label
+    color: $mid-green
+
+.login_input_container
+  p
+    color: white
+
+// Activity Page==========================
+
+.hidden:hover
+  opacity: 1
+
+.comingsoon
+  opacity: .3
+
+// User Side Menu==========================
+.user_side_menu
+  background-color: transparentize(#003035, 0.2)
+
+.user_list
+  a
+    color: white
+  ul
+    margin-bottom: 1em
+  li
+    &:hover
+      background-color: $light-green
+      border-bottom: 0.1em solid $mid-green
+
+.user_stats
+  h3
+    color: $brown
+  h5
+    color: $mid-green
+
+//User activity menu=========================
+
+.activity_list_item
+  background-color: $dark-green
+  color: white
+
+h5
+  color: $mid-green
+
+.panel_options
+  .button_signup
+    &:hover
+      background-color: white
+      color: $mid-green

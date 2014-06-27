@@ -16,6 +16,8 @@ var fs = require('fs');
 
 //mongoose.connect(configDB.url);
 
+var mongoURI = process.env.MONGOLAB_URI || process.env.MONGOHQ_URL || 'mongodb://localhost/go-outside';
+
 var app = express();
 
 var jwtauth = require('./config/auth')(app);
@@ -33,7 +35,7 @@ var options = {
   cert: fs.readFileSync('config/server.crt')
 };
 
-mongoose.connect('mongodb://localhost/go-outside');
+mongoose.connect(mongoURI);
 
 var server = https.createServer(options, app);
 server.listen(process.env.PORT || 3000, function() {

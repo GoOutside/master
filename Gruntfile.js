@@ -32,7 +32,7 @@ module.exports = function(grunt) {
       design: {
         expand: true,
         cwd: './design',
-        src: ['sass/**/*', 'stylesheets/*.css', 'images/**/*'],
+        src: ['sass/**/*', 'stylesheets/*.css', 'images/**/*', 'user_home.js'],
         dest: 'client/',
         flatten: false,
         filter: 'isFile'

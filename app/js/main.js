@@ -2,6 +2,7 @@ require('angular/angular');
 require('angular-route');
 require('angular-cookies');
 require('angular-base64');
+var $ = require('jquery');
 
 var goApp = angular.module('goApp', ['ngRoute', 'base64', 'ngCookies']);
 
@@ -9,6 +10,8 @@ require('../controllers/loginController')(goApp);
 require('../controllers/userController')(goApp);
 require('../controllers/detailsController')(goApp);
 require('../controllers/activitiesController')(goApp);
+
+
 
 goApp.config(['$routeProvider', function($routeProvider){
   $routeProvider

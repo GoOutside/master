@@ -6,12 +6,7 @@ var User = require('../models/User');
 
 module.exports = function (app, passport) {
   app.post('/api/v0_0_1/users', function (req, res) {
-    console.log('post route reached');
-
     User.findOne({'basic.email': req.body.email}, function (err, user){
-      console.log('mongo responding');
-      console.log(user);
-      console.log(req.body.email);
 
       if(err) {
         return res.json(500, err);

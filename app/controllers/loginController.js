@@ -26,7 +26,7 @@ module.exports = function(app) {
       });
     };
 
-    $scope.createUser = function(){  
+    $scope.createUser = function(){
       $http({
         method: 'POST',
         url: 'https://localhost:3000/api/v0_0_1/users',

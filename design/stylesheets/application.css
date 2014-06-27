@@ -284,10 +284,12 @@ main {
     width: 100%;
     margin-left: 1em; }
 
-.user_stats h3 {
-  margin: 0.5em 0; }
-.user_stats h5 {
-  margin: 0.2em 0; }
+.user_stats {
+  margin-left: 1em; }
+  .user_stats h3 {
+    margin: 0.5em 0; }
+  .user_stats h5 {
+    margin: 0.2em 0; }
 
 .activity_map {
   height: 20em;
@@ -481,9 +483,6 @@ html.html_activity {
   body {
     font-size: 0.619em; }
 
-  .user_stats {
-    margin-left: 1em; }
-
   .user_photo {
     margin: 1.618em 0;
     width: 70%; }
@@ -492,14 +491,8 @@ html.html_activity {
     border-bottom: 0.2em solid #9ac69b;
     line-height: 2.5em; } }
 @media all and (max-width: 600px) and (min-width: 500px) {
-  body {
-    font-size: 1em; }
-
   .user_list li {
     line-height: 2em; }
-
-  .user_stats {
-    margin-left: 1em; }
 
   .user_photo {
     margin: 1.618em 0;
@@ -511,9 +504,6 @@ html.html_activity {
   .user_list li {
     line-height: 1.618em; }
 
-  .user_stats {
-    margin-left: 1em; }
-
   .user_photo {
     margin: 0.5em;
     width: 45%; } }
@@ -521,9 +511,6 @@ html.html_activity {
   .user_photo {
     width: 60%;
     margin-left: 0.5em; }
-
-  .user_stats {
-    margin: 0.8em; }
 
   .menu-link {
     display: none; }

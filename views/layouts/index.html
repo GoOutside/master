@@ -1,0 +1,159 @@
+<html>
+ <head>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+	<script src="http://cloud.github.com/downloads/wycats/handlebars.js/handlebars-1.0.0.beta.6.js" type="text/javascript" charset="utf-8"></script>
+	<script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"></script>
+	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.5/leaflet.css" />
+	
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="node_modules/leaflet/dist/leaflet.ie.css" />
+    <![endif]-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CTAC Leaflet/Handlebars</title>
+    <style>
+    	#map { height: 70% }
+    </style>
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h1>Leaflet & Handlebars??</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <h2>Map</h2>
+        </div>
+        <div class="col-xs-12" id="map">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <h2>Table</h2>
+        </div>
+        <div class="col-xs-12" id="table_container">
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+        var data; 
+        $.ajax({
+          url: '/api/v1/notes4',
+          async: false,
+          dataType: 'json',
+          success: function (response) {
+            data = response; 
+          }
+        });
+        //console.log(data);
+
+        var map = L.map('map').setView([49, -120], 7);
+
+        L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}', {
+            attribution: 'Tiles &copy; Esri &mdash; National Geographic, Esri, DeLorme, NAVTEQ, UNEP-WCMC, USGS, NASA, ESA, METI, NRCAN, GEBCO, NOAA, iPC',
+            id: 'examples.map-20v6611k'
+        }).addTo(map);
+
+        /*var points = L.geoJson(data, {
+            onEachFeature: function (feature, layer) {
+	            var popupOptions = {maxWidth: 200};
+	            var popupContent = feature.properties.name + "<br />" + feature.properties.lat + ", " + feature.properties.lng;
+	            layer.bindPopup(popupContent,popupOptions);
+            }   
+        });*/
+        
+        function locateUser(){
+            map.locate({setView: true, maxZoom: 12}); 
+        };
+        map.on('locationfound', onLocationFound);
+        function onLocationFound(e) {
+            console.log("Found location!");
+            // More code to follow...
+            console.log(e.latlng);
+            $.get(
+			    "notes5",
+			    { paramOne : e.latlng.lat, paramTwo : e.latlng.lng},
+			    function(data2) {
+			    	//alert('page content: ' + data2);
+			    	console.log(data2);
+			    	var hikesArray = [];
+			    	for (var i = 0; i < data2.length; i++) {
+			    		console.log(data2[i].geometry.coordinates);
+			    		hikesArray.push(data2[i].geometry.coordinates[1],data2[i].geometry.coordinates[0]);
+			    		var mark = L.marker([data2[i].geometry.coordinates[1],data2[i].geometry.coordinates[0]]).addTo(map);
+			    		//var pointer = L.marker([ 47.63, 122.3 ]).addTo(map);
+
+			            var popupOptions = {maxWidth: 200};
+			            var popupContent =  data2[i].properties.name + "<br />" + data2[i].properties.lat + ", " +  data2[i].properties.lng;
+			            mark.bindPopup(popupContent,popupOptions);
+			    	}
+			    	//map.setExtent(data2.getExtent());
+					//var group = new L.featureGroup(data2);
+					console.log(hikesArray);
+					var bounds = L.latLngBounds(hikesArray);
+					console.log(bounds);
+					//map.fitBounds(bounds.getBounds());
+					//map.fitBounds(bounds);//works!
+
+			    	//map.fitBounds(data2);
+			    }
+			);
+
+        }
+        locateUser();
+        //map.addLayer(points);
+
+    </script>
+
+
+    <!--<script id="info_template" type="text/x-handlebars-template">
+      <div>
+      <p>Vaccination Claims Rate</p>
+      {{#if name}}
+        <p>{{name}}</p>
+        {{#if count}}
+        <p>Beneiciaries: {{count}}</p>
+        {{/if}}
+        {{#if percentage}}
+        <p>Rate: {{percentage}}</p>
+        {{/if}}
+      {{else}}
+        <p>Hover over a region for data.</p>
+      {{/if}}
+      </div>
+    </script>
+    <script id="table_template" type="text/x-handlebars-template">
+      <table class="table table-striped table-bordered" id="states_table">
+        <tbody>
+          <tr>
+            <th scope="col">State Name</th>
+            <th scope="col">Beneficiaries</th>
+            <th scope="col">Rate</th>
+          </tr>
+          {{#each this}}
+            <tr>
+              <th scope="row">{{name}}</th>
+              <td>{{count}}</td>
+              <td>{{percentage}}</td>
+            </tr>
+          {{/each}}
+        </tbody>
+      </table>
+    </script>-->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!--<script src="../../../javascript/jquery.min.js"></script>-->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!--<script src="../javascript/bootstrap.min.js"></script>
+    <script src="javascript/leaflet.min.js"></script>
+    <script src="javascript/underscore.min.js"></script>
+    <script src="javascript/handlebars.js"></script>
+    
+    <script src="hikes.js"></script>-->
+    <script src="client.js"></script>
+  </body>
+</html>

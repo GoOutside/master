@@ -14,13 +14,17 @@ $mid-green: #69ad57
     &.button_login, &.button_signup
       &:hover
         background-color: $light-green
-        color: #003035
+        color: white
 
 .login_input
   input
     color: #bf7532
   label
     color: $mid-green
+
+.login_input_container
+  p
+    color: white
 
 // Activity Page==========================
 
@@ -37,9 +41,12 @@ $mid-green: #69ad57
 .user_list
   a
     color: white
+  ul
+    margin-bottom: 0.8em
   li
     &:hover
       background-color: $light-green
+      border-bottom: 0.1em solid $mid-green
 
 .user_stats
   h3

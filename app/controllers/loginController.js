@@ -9,7 +9,6 @@ module.exports = function(app) {
     //   //insert twitter call here
     // };
     $scope.signin = function(){
-      console.log($scope.user.email + ':' + $scope.user.password);
       $http.defaults.headers.common['Authorization'] = 'Basic ' + $base64.encode($scope.user.email + ':' + $scope.user.password);
 
       $http({
@@ -18,12 +17,34 @@ module.exports = function(app) {
       }).success(function(data){
         if(data.jwt) {
           $cookies.jwt = data.jwt;
-          $location.path('/user');
+          $location.path('/activities');
         } else {
           $scope.failedLogin = "Incorrect username/password combination."
         }
       }).error(function(data){
         console.log(data);
+      });
+    };
+
+    $scope.createUser = function(){  
+      $http({
+        method: 'POST',
+        url: 'https://localhost:3000/api/v0_0_1/users',
+        data: {
+          email: $scope.user.email,
+          password: $scope.user.password
+        }
+      }).success(function(data){
+        if(data.jwt) {
+          $cookies.jwt = data.jwt;
+          $location.path('/user');
+        } else {
+          $scope.failedLogin = "Incorrect username/password combination."
+        }
+      }).error(function(err, data){
+        if(err==401){
+          $scope.failedLogin = "User already exists"
+        }
       });
     };
   });

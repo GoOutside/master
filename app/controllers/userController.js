@@ -8,8 +8,6 @@ module.exports = function(app) {
       $location.path('/');
       console.log('signout');
     };
-    console.log('UserController Success!!');
-
   });
 };
 

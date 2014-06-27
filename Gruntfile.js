@@ -110,7 +110,7 @@ module.exports = function(grunt) {
 
   });
 
-  grunt.registerTask('serve', [ 'build', 'express:dev','watch' ]);
+  grunt.registerTask('serve', [ 'build', 'shell', 'express:dev', 'watch' ]);
   grunt.registerTask('server', 'serve');
   grunt.registerTask('test:acceptance',['express:dev','casper']);
   grunt.registerTask('test:api','simplemocha');

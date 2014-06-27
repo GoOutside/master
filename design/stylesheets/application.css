@@ -45,6 +45,10 @@ body {
   .login_input label {
     font-size: 1vm; }
 
+.login_input_container p {
+  font-size: 0.8em;
+  margin-top: 1em; }
+
 .login_social h4 {
   font-size: 1.618em; }
 
@@ -79,12 +83,15 @@ body {
 
 .login_form_buttons a.button_login:hover, .login_form_buttons a.button_signup:hover {
   background-color: #9ac69b;
-  color: #003035; }
+  color: white; }
 
 .login_input input {
   color: #bf7532; }
 .login_input label {
   color: #69ad57; }
+
+.login_input_container p {
+  color: white; }
 
 .hidden:hover {
   opacity: 1; }
@@ -97,8 +104,11 @@ body {
 
 .user_list a {
   color: white; }
+.user_list ul {
+  margin-bottom: 0.8em; }
 .user_list li:hover {
-  background-color: #9ac69b; }
+  background-color: #9ac69b;
+  border-bottom: 0.1em solid #69ad57; }
 
 .user_stats h3 {
   color: #bf7532; }
@@ -119,6 +129,7 @@ h5 {
   text-decoration: none;
   align-content: center;
   justify-content: center;
+  text-align: center;
   font-size: 1em;
   color: white; }
 
@@ -258,7 +269,8 @@ main {
   text-align: left;
   padding: 0.2em 0;
   width: 95%;
-  border-bottom: 0.1em solid #9ac69b; }
+  border-bottom: 0.1em solid #9ac69b;
+  line-height: 2em; }
   .user_list li a {
     width: 100%;
     margin-left: 1em; }
@@ -308,6 +320,9 @@ main {
     line-height: 2em;
     margin: auto;
     text-align: center; }
+    .panel_options .button_signup:hover {
+      background-color: white;
+      color: #69ad57; }
 
 .panel_options_img {
   height: 30%;
@@ -484,7 +499,7 @@ html.html_activity {
 
   .user_photo {
     margin: 1.618em 0;
-    width: 80%; } }
+    width: 70%; } }
 @media all and (max-width: 900px) and (min-width: 601px) {
   .user_photo {
     margin: 1.618em;

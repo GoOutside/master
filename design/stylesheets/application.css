@@ -292,8 +292,11 @@ main {
     margin: 0.2em 0; }
 
 .activity_map {
-  height: 20em;
+  height: auto;
   width: 100%; }
+  .activity_map img {
+    width: 96%;
+    margin: 0.7em; }
 
 .activity_list_item {
   width: 96%;

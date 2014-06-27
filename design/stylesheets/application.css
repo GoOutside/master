@@ -76,6 +76,11 @@ body {
 .activity:hover .hidden {
   font-size: 0.8em; }
 
+.panel_options .button_signup {
+  line-height: 2em;
+  margin: auto;
+  text-align: center; }
+
 .login_container {
   background-color: rgba(0, 48, 53, 0.8); }
   .login_container h4 {
@@ -105,7 +110,7 @@ body {
 .user_list a {
   color: white; }
 .user_list ul {
-  margin-bottom: 0.8em; }
+  margin-bottom: 1em; }
 .user_list li:hover {
   background-color: #9ac69b;
   border-bottom: 0.1em solid #69ad57; }
@@ -120,6 +125,10 @@ body {
   color: white; }
 
 h5 {
+  color: #69ad57; }
+
+.panel_options .button_signup:hover {
+  background-color: white;
   color: #69ad57; }
 
 .button_login {
@@ -316,13 +325,7 @@ main {
   justify-content: space-around; }
   .panel_options .button_signup {
     width: 8em;
-    height: 2em;
-    line-height: 2em;
-    margin: auto;
-    text-align: center; }
-    .panel_options .button_signup:hover {
-      background-color: white;
-      color: #69ad57; }
+    height: 2em; }
 
 .panel_options_img {
   height: 30%;
@@ -478,15 +481,16 @@ html.html_activity {
   body {
     font-size: 0.619em; }
 
-  .user_list li {
-    line-height: 3em; }
-
   .user_stats {
     margin-left: 1em; }
 
   .user_photo {
     margin: 1.618em 0;
-    width: 80%; } }
+    width: 70%; }
+
+  .user_list li {
+    border-bottom: 0.2em solid #9ac69b;
+    line-height: 2.5em; } }
 @media all and (max-width: 600px) and (min-width: 500px) {
   body {
     font-size: 1em; }
@@ -502,10 +506,10 @@ html.html_activity {
     width: 50%; } }
 @media all and (max-width: 900px) and (min-width: 601px) {
   .activity_list_item {
-    line-height: 1.5em; }
+    line-height: 2em; }
 
   .user_list li {
-    line-height: 1em; }
+    line-height: 1.618em; }
 
   .user_stats {
     margin-left: 1em; }
@@ -525,7 +529,7 @@ html.html_activity {
     display: none; }
 
   .user_list li {
-    line-height: 1em; }
+    line-height: 2em; }
 
   .activity_list_item .panel {
     height: auto; }

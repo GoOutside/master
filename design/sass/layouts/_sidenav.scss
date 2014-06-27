@@ -1,0 +1,69 @@
+.user_side_menu {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 25.755em;
+  left: -25.755em;
+  height: 100%;
+  -webkit-transform: translate(0px, 0px);
+  -moz-transform: translate(0px, 0px);
+  -o-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
+  -webkit-transition: 0.30s ease;
+  -moz-transition: 0.30s ease;
+  -o-transition: 0.30s ease;
+  transition: 0.30s ease;
+}
+
+.user_side_menu.active {
+  -webkit-transform: translate(25.755em, 0px);
+  -moz-transform: translate(25.755em, 0px);
+  -o-transform: translate(25.755em, 0px);
+  -ms-transform: translate(25.755em, 0px);
+  transform: translate(25.755em, 0px);
+}
+
+.activity_location {
+  -webkit-transform: translate(0px, 0px);
+  -moz-transform: translate(0px, 0px);
+  -o-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
+  -webkit-transition: 0.30s ease;
+  -moz-transition: 0.30s ease;
+  -o-transition: 0.30s ease;
+  transition: 0.30s ease;
+}
+
+.activity_location.active {
+  -webkit-transform: translate(25.755em, 0px);
+  -moz-transform: translate(25.755em, 0px);
+  -o-transform: translate(25.755em, 0px);
+  -ms-transform: translate(25.755em, 0px);
+  transform: translate(25.755em, 0px);
+}
+
+.menu-link {
+  background-color: transparent;
+  border: hidden;
+  color: white;
+  left: 0px
+}
+
+.menu-link:active {
+  border: none;
+  color: $mid-green;
+  outline: none;
+}
+
+.menu-link:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.icon-GoOutsideLogo {
+  color: white;
+}
+
+

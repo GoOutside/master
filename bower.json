@@ -1,0 +1,26 @@
+{
+  "name": "go-outside",
+  "version": "0.0.1",
+  "homepage": "https://github.com/GoOutside/master",
+  "authors": [
+    "Hailey Petway <petwayh@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.2.18",
+    "angular-route": "~1.2.18",
+    "angular-base64": "~2.0.2",
+    "angular-cookies": "~1.2.18",
+    "jquery": "~1.9",
+    "modernizr": "~2.8.2"
+  }
+}

@@ -39,7 +39,7 @@ var options = {
 
 mongoose.connect(mongoURI);
 
-var server = https.createServer(options, app);
+var server = http.createServer(app);
 server.listen(app.get('port'), function() {
   console.log('server running on port: ' + app.get('port'));
 });

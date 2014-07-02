@@ -22,10 +22,12 @@ var app = express();
 
 var jwtauth = require('./config/auth')(app);
 
+
 app.use(bodyparser.json());
 app.use(express.static(__dirname + '/client'));
 app.use(passport.initialize());
 
+app.set('port', process.env.PORT || 3000);
 app.set('jwtTokenSecret', process.env.JWT_SECRET || 'takeahiketakeahiketakeahike');
 require('./config/passport')(passport);
 require('./routes/routes')(app, passport);
@@ -38,7 +40,7 @@ var options = {
 mongoose.connect(mongoURI);
 
 var server = https.createServer(options, app);
-server.listen(process.env.PORT || 3000, function() {
-  console.log('server running on port: ' + process.env.PORT || 3000);
+server.listen(app.get('port'), function() {
+  console.log('server running on port: ' + app.get('port'));
 });
 

@@ -32650,7 +32650,7 @@ module.exports = function(app) {
 
       $http({
         method: 'GET',
-        url: 'https://localhost:3000/api/v0_0_1/users'
+        url: 'api/v0_0_1/users'
       }).success(function(data){
         if(data.jwt) {
           $cookies.jwt = data.jwt;
@@ -32666,7 +32666,7 @@ module.exports = function(app) {
     $scope.createUser = function(){
       $http({
         method: 'POST',
-        url: 'https://localhost:3000/api/v0_0_1/users',
+        url: 'api/v0_0_1/users',
         data: {
           email: $scope.user.email,
           password: $scope.user.password

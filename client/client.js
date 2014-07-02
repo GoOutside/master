@@ -32674,7 +32674,7 @@ module.exports = function(app) {
       }).success(function(data){
         if(data.jwt) {
           $cookies.jwt = data.jwt;
-          $location.path('/user');
+          $location.path('/activities');
         } else {
           $scope.failedLogin = "Incorrect username/password combination."
         }

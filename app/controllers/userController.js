@@ -2,6 +2,11 @@
 
 module.exports = function(app) {
   app.controller('userController', function($scope, $http, $cookies, $location){
+    if (!$cookies.jwt){
+      $location.path('/');
+      return false;
+    }
+
     $http.defaults.headers.common['jwt'] = $cookies.jwt;
 
     $('.activity_list_item').on("click", function(){

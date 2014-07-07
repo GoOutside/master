@@ -2,12 +2,10 @@
 
 module.exports = function(app) {
   app.controller('loginController', function($scope, $http, $base64, $cookies, $location){
-    // $scope.facebook = function(){
-    //   //insert facebook call here
-    // };
-    // $scope.twitter = function(){
-    //   //insert twitter call here
-    // };
+    if($cookies.jwt){
+      $location.path('/activities');
+      return false;
+    }
     $scope.signin = function(){
       $http.defaults.headers.common['Authorization'] = 'Basic ' + $base64.encode($scope.user.email + ':' + $scope.user.password);
 

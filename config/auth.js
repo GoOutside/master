@@ -26,15 +26,4 @@ module.exports = function(app) {
     });
   };
 
-  // 'facebookAuth' : {
-  //   'clientID'    : '861620270534652', // your App ID
-  //   'clientSecret'  : '769b29c1317d5e7e9dc6af4494e69d03', // your App Secret
-  //   'callbackURL'   : 'http://localhost:3000/auth/facebook/callback' //to be determined
-  // },
-
-  // 'twitterAuth' : {
-  //   'consumerKey'     : 'k8LoXMnLanGGKxzRinC6wdKu7',
-  //   'consumerSecret'  : 'cnmeh9U3aEDcMmZppKf2f5C9GFGKaGSAGA2iu2NoJsxB5jby7d',
-  //   'callbackURL'     : 'http://localhost:8080/auth/twitter/callback'
-  // }
 };
